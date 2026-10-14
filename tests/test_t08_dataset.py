@@ -1,3 +1,4 @@
+
 """
 tests/test_t08_dataset.py -- T08: contrastive dataset build tests.
 
@@ -5,7 +6,9 @@ Tests (fast): manifest schema, labels schema, validation_report zero errors.
 Slow test: full rebuild is deterministic (sha256 matches on second run).
 """
 from __future__ import annotations
+
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -15,25 +18,41 @@ DATASET_DIR = Path("data/dataset")
 LIBRARY_DIR = Path("data/library")
 
 
+def _portable_path(value: str) -> Path:
+    """Normalize Windows-style paths for cross-platform filesystem access."""
+    return Path(value.replace("\\", "/"))
+
+
 def _manifest_rows() -> list[dict]:
+    """Read manifest.csv and return its rows."""
     p = DATASET_DIR / "manifest.csv"
     if not p.exists():
         return []
-    with open(p, encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+
+    with open(p, encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f))
+
+    return rows
 
 
 def _val_report() -> dict:
+    """Read the dataset validation report."""
     p = DATASET_DIR / "validation_report.json"
     if not p.exists():
         return {}
+
     return json.loads(p.read_text(encoding="utf-8"))
 
 
 def _all_labels() -> list[dict]:
+    """Collect label entries from all speech-level labels.json files."""
     results = []
+
     for labels_file in DATASET_DIR.glob("*/labels.json"):
-        results.extend(json.loads(labels_file.read_text(encoding="utf-8")))
+        results.extend(
+            json.loads(labels_file.read_text(encoding="utf-8"))
+        )
+
     return results
 
 
@@ -42,9 +61,14 @@ def _all_labels() -> list[dict]:
 # ---------------------------------------------------------------------------
 def test_dataset_dir_exists():
     if not DATASET_DIR.exists():
-        pytest.skip("dataset not built yet -- run `python -m speechlens dataset build`")
+        pytest.skip(
+            "dataset not built yet -- run `python -m speechlens dataset build`"
+        )
+
     assert (DATASET_DIR / "manifest.csv").exists(), "manifest.csv missing"
-    assert (DATASET_DIR / "validation_report.json").exists(), "validation_report.json missing"
+    assert (
+        DATASET_DIR / "validation_report.json"
+    ).exists(), "validation_report.json missing"
 
 
 # ---------------------------------------------------------------------------
@@ -52,8 +76,10 @@ def test_dataset_dir_exists():
 # ---------------------------------------------------------------------------
 def test_validation_zero_errors():
     report = _val_report()
+
     if not report:
         pytest.skip("validation_report.json not found")
+
     assert report.get("n_errors", 0) == 0, (
         f"dataset build had {report['n_errors']} errors"
     )
@@ -64,9 +90,12 @@ def test_validation_zero_errors():
 # ---------------------------------------------------------------------------
 def test_at_least_100_injected():
     rows = _manifest_rows()
+
     if not rows:
         pytest.skip("manifest.csv not found")
+
     injected = [r for r in rows if r.get("role") == "injected"]
+
     assert len(injected) >= 100, (
         f"expected >= 100 injected files, got {len(injected)}"
     )
@@ -77,14 +106,31 @@ def test_at_least_100_injected():
 # ---------------------------------------------------------------------------
 def test_manifest_columns():
     p = DATASET_DIR / "manifest.csv"
+
     if not p.exists():
         pytest.skip("manifest.csv not found")
-    with open(p, encoding="utf-8") as f:
+
+    with open(p, encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
-        expected = {"file", "speech_id", "reader_id", "role", "level",
-                    "families", "n_flaws", "duration_s", "split", "sha256", "leaky_baseline"}
-        assert expected.issubset(set(reader.fieldnames or [])), (
-            f"missing columns: {expected - set(reader.fieldnames or [])}"
+
+        expected = {
+            "file",
+            "speech_id",
+            "reader_id",
+            "role",
+            "level",
+            "families",
+            "n_flaws",
+            "duration_s",
+            "split",
+            "sha256",
+            "leaky_baseline",
+        }
+
+        actual = set(reader.fieldnames or [])
+
+        assert expected.issubset(actual), (
+            f"missing columns: {expected - actual}"
         )
 
 
@@ -93,17 +139,33 @@ def test_manifest_columns():
 # ---------------------------------------------------------------------------
 def test_labels_schema():
     labels = _all_labels()
+
     if not labels:
         pytest.skip("labels.json not found")
-    required = {"file", "speech_id", "reader_id", "level", "split",
-                "leaky_baseline", "synthetic_flaw", "flaws"}
+
+    required = {
+        "file",
+        "speech_id",
+        "reader_id",
+        "level",
+        "split",
+        "leaky_baseline",
+        "synthetic_flaw",
+        "flaws",
+    }
+
     for entry in labels:
         missing = required - set(entry.keys())
-        assert not missing, f"labels entry missing fields: {missing}"
+
+        assert not missing, (
+            f"labels entry missing fields: {missing}"
+        )
+
         if entry["synthetic_flaw"]:
-            assert isinstance(entry["flaws"], list) and len(entry["flaws"]) > 0, (
-                "synthetic_flaw=True but flaws list is empty"
-            )
+            assert (
+                isinstance(entry["flaws"], list)
+                and len(entry["flaws"]) > 0
+            ), "synthetic_flaw=True but flaws list is empty"
 
 
 # ---------------------------------------------------------------------------
@@ -111,15 +173,22 @@ def test_labels_schema():
 # ---------------------------------------------------------------------------
 def test_flac_files_exist():
     rows = _manifest_rows()
+
     if not rows:
         pytest.skip("manifest.csv not found")
+
     missing = []
-    for r in rows:
-        p = Path(r["file"])
-        if not p.exists():
-            missing.append(r["file"])
+
+    for row in rows:
+        # Normalize backslashes so manifest paths work on Linux and Windows.
+        path = _portable_path(row["file"])
+
+        if not path.exists():
+            missing.append(row["file"])
+
     assert len(missing) == 0, (
-        f"{len(missing)} files in manifest.csv do not exist: {missing[:5]}..."
+        f"{len(missing)} files in manifest.csv do not exist: "
+        f"{missing[:5]}..."
     )
 
 
@@ -128,24 +197,28 @@ def test_flac_files_exist():
 # ---------------------------------------------------------------------------
 @pytest.mark.slow
 def test_rebuild_determinism():
-    """Rebuild speech-001 and verify sha256 of injected files matches first run."""
-    import hashlib
+    """Rebuild speech-001 and verify SHA-256 values remain unchanged."""
     from speechlens.dataset.build import build
 
     rows = _manifest_rows()
+
     if not rows:
         pytest.skip("dataset not built; run build first")
 
-    # Record sha256s for speech-001 injected files from first build
+    # Record hashes for speech-001 injected files before rebuilding.
     first_sha = {
-        r["file"]: r["sha256"]
-        for r in rows
-        if r["speech_id"] == "speech-001" and r["role"] == "injected"
+        row["file"]: row["sha256"]
+        for row in rows
+        if (
+            row["speech_id"] == "speech-001"
+            and row["role"] == "injected"
+        )
     }
+
     if not first_sha:
         pytest.skip("no speech-001 injected files in manifest")
 
-    # Rebuild speech-001 only
+    # Rebuild only speech-001.
     build(
         library_dir=LIBRARY_DIR,
         dataset_dir=DATASET_DIR,
@@ -153,21 +226,32 @@ def test_rebuild_determinism():
         skip_align=True,
     )
 
-    # Check sha256s match
-    def _sha256(path: str) -> str:
+    def _sha256(path: Path) -> str:
+        """Calculate SHA-256 for a file."""
         h = hashlib.sha256()
+
         with open(path, "rb") as f:
             for chunk in iter(lambda: f.read(65536), b""):
                 h.update(chunk)
+
         return h.hexdigest()
 
     mismatches = []
-    for filepath, sha in first_sha.items():
-        if Path(filepath).exists():
-            new_sha = _sha256(filepath)
-            if new_sha != sha:
-                mismatches.append(filepath)
+
+    for filepath, expected_sha in first_sha.items():
+        path = _portable_path(filepath)
+
+        # A missing file must fail the determinism check rather than
+        # silently passing because its hash could not be calculated.
+        if not path.exists():
+            mismatches.append(filepath)
+            continue
+
+        actual_sha = _sha256(path)
+
+        if actual_sha != expected_sha:
+            mismatches.append(filepath)
 
     assert len(mismatches) == 0, (
-        f"Non-deterministic files: {mismatches}"
+        f"Non-deterministic or missing files: {mismatches}"
     )
