@@ -45,7 +45,7 @@ def validate(
     splits_seen: set[str] = set()
 
     for row in rows:
-        file_path = Path(row["file"])
+        file_path = Path(row["file"].replace("\\", "/"))
         # 1. File exists
         if not file_path.exists():
             issues.append(f"file missing: {row['file']}")
