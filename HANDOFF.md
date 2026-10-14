@@ -83,8 +83,8 @@ After authenticating (gh auth login), run:
 
 Then update README.md and DATACARD.md with the release URL and commit.
 
-GitHub repo URL: (fill after publish)
-Dataset release URL: (fill after publish)
+GitHub repo URL: https://github.com/jagomohan31/ECHO-Evaluative-Contrastive-Holistic-Orations-
+Dataset release URL: https://github.com/jagomohan31/ECHO-Evaluative-Contrastive-Holistic-Orations-/releases/tag/dataset-v1
 
 ---
 
@@ -97,7 +97,7 @@ Set HF_TOKEN in your environment, then run:
 The script creates a Docker Space and uploads all assets.
 Wait for the HF build (~10 min), then verify /api/health.
 
-Space URL: (fill after deploy)
+Space URL: https://huggingface.co/spaces/jagomohan/speechlens
 
 ---
 

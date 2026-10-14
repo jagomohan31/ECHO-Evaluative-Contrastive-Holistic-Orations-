@@ -1,5 +1,6 @@
-"""scripts/deploy_hf_space.py -- Deploy SpeechLens Docker Space to Hugging Face.
+"""scripts/deploy_hf_space.py -- Deploy SpeechLens Static Space to Hugging Face.
 
+Uses space_sdk='static' (free tier) -- uploads the pre-built Next.js web/out export.
 Reads HF_TOKEN strictly from the environment; never writes or commits credentials.
 """
 from __future__ import annotations
@@ -16,7 +17,6 @@ def deploy(repo_id: str | None = None):
     if not token:
         print("ERROR: HF_TOKEN environment variable is not set.", file=sys.stderr)
         print("Please set your Hugging Face write token: export HF_TOKEN='hf_...'", file=sys.stderr)
-        print("Skipping deployment as per TASK_2_APP.md T12 fallback rules.", file=sys.stderr)
         return False
 
     try:
@@ -31,51 +31,30 @@ def deploy(repo_id: str | None = None):
         user = api.whoami()["name"]
         repo_id = f"{user}/speechlens"
 
-    print(f"Creating/updating Hugging Face Space: {repo_id}...")
+    print(f"Creating/updating Hugging Face Static Space: {repo_id}...")
     api.create_repo(
         repo_id=repo_id,
         repo_type="space",
-        space_sdk="docker",
+        space_sdk="static",
         exist_ok=True,
     )
 
-    # Files and folders to upload
-    upload_paths = [
-        "Dockerfile",
-        ".dockerignore",
-        "requirements.lock",
-        "pyproject.toml",
-        "src",
-        "api",
-        "config",
-        "data/library",
-        "data/demo",
-        "web/out",
-    ]
+    web_out = REPO_ROOT / "web" / "out"
+    if not web_out.exists():
+        print("ERROR: web/out does not exist.", file=sys.stderr)
+        return False
 
-    print("Uploading project assets to Space...")
-    for rel_path in upload_paths:
-        local_path = REPO_ROOT / rel_path
-        if not local_path.exists():
-            print(f"Warning: {rel_path} does not exist, skipping.")
-            continue
+    file_count = sum(1 for _ in web_out.rglob("*") if _.is_file())
+    print(f"Uploading web/out static export ({file_count} files)...")
+    api.upload_folder(
+        folder_path=str(web_out),
+        path_in_repo="",
+        repo_id=repo_id,
+        repo_type="space",
+        ignore_patterns=["*.pyc", "__pycache__"],
+        delete_patterns=["_next/static/chunks/app/page-*.js"],
+    )
 
-        if local_path.is_file():
-            api.upload_file(
-                path_or_fileobj=str(local_path),
-                path_in_repo=rel_path,
-                repo_id=repo_id,
-                repo_type="space",
-            )
-        else:
-            api.upload_folder(
-                folder_path=str(local_path),
-                path_in_repo=rel_path,
-                repo_id=repo_id,
-                repo_type="space",
-            )
-
-    # Upload Space README.md
     space_readme = REPO_ROOT / "deploy" / "hf_space" / "README.md"
     if space_readme.exists():
         api.upload_file(

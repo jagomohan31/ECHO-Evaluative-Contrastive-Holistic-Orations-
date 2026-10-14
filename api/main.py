@@ -50,7 +50,7 @@ app.add_middleware(
 
 # ── Concurrency & Timeout Guards ─────────────────────────────────────────────
 _SEMAPHORE = asyncio.Semaphore(1)
-_TIMEOUT_SECONDS = 120
+_TIMEOUT_SECONDS = 300
 
 LIBRARY_DIR = Path("data/library")
 CACHE_MEDIA_DIR = Path(".cache/media")

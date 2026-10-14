@@ -30,6 +30,7 @@ export function ControlPanel() {
   const [recordDuration, setRecordDuration] = useState(0);
   const [isPlayingBaseline, setIsPlayingBaseline] = useState(false);
   const [demoList, setDemoList] = useState<any[]>([]);
+  const [isDemoActive, setIsDemoActive] = useState(false);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
@@ -39,15 +40,23 @@ export function ControlPanel() {
 
   // Load speeches on mount
   useEffect(() => {
+    const FALLBACK_SPEECHES = [
+      { id: "speech-001", title: "The Gettysburg Address", speaker: "Abraham Lincoln", duration_s: 75.0, n_words: 91, transcript: "", baseline_audio_url: "/api/media/speech-001/baseline.wav", n_readers: 3 },
+      { id: "speech-002", title: "Lincoln Second Inaugural Address", speaker: "Abraham Lincoln", duration_s: 49.2, n_words: 74, transcript: "", baseline_audio_url: "/api/media/speech-002/baseline.wav", n_readers: 1 },
+      { id: "speech-003", title: "Give Me Liberty or Give Me Death", speaker: "Patrick Henry", duration_s: 70.0, n_words: 106, transcript: "", baseline_audio_url: "/api/media/speech-003/baseline.wav", n_readers: 1 },
+      { id: "speech-004", title: "Emancipation Proclamation (excerpt)", speaker: "Abraham Lincoln", duration_s: 70.0, n_words: 99, transcript: "", baseline_audio_url: "/api/media/speech-004/baseline.wav", n_readers: 1 },
+    ];
     getSpeeches()
       .then((data) => {
-        setSpeeches(data);
-        if (data.length > 0 && !selectedSpeechId) {
-          setSelectedSpeechId(data[0].id);
+        const speeches = data.length > 0 ? data : FALLBACK_SPEECHES;
+        setSpeeches(speeches);
+        if (speeches.length > 0 && !selectedSpeechId) {
+          setSelectedSpeechId(speeches[0].id);
         }
       })
-      .catch((err) => {
-        console.warn("Failed to load speeches:", err);
+      .catch(() => {
+        setSpeeches(FALLBACK_SPEECHES);
+        if (!selectedSpeechId) setSelectedSpeechId(FALLBACK_SPEECHES[0].id);
       });
 
     getDemoClips()
@@ -61,6 +70,7 @@ export function ControlPanel() {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
+      setIsDemoActive(false);
       setAudioBlob(file);
     }
   };
@@ -69,6 +79,7 @@ export function ControlPanel() {
     e.preventDefault();
     const file = e.dataTransfer.files?.[0];
     if (file) {
+      setIsDemoActive(false);
       setAudioBlob(file);
     }
   };
@@ -94,6 +105,7 @@ export function ControlPanel() {
       };
 
       recorder.start(100);
+      setIsDemoActive(false);
       setIsRecording(true);
       setRecordDuration(0);
       recordTimerRef.current = setInterval(() => {
@@ -162,6 +174,7 @@ export function ControlPanel() {
     try {
       const result = await loadDemoResult(demo.result_url);
       setAnalysisResult(result);
+      setIsDemoActive(true);
       if (demo.audio_url) {
         setAudioUrl(demo.audio_url);
       }
@@ -235,7 +248,8 @@ export function ControlPanel() {
         </div>
       )}
 
-      {/* Audio Input: Upload & Microphone */}
+      {/* Audio Input: shown only in Norm Mode or when a file is already loaded */}
+      {(isNormMode || audioBlob) && !isDemoActive && (
       <div className="space-y-3">
         <label className="text-xs font-semibold text-slate-300">Your Audio Recording</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -304,6 +318,7 @@ export function ControlPanel() {
           </div>
         )}
       </div>
+      )}
 
       {/* Transcript Textarea (Norm Mode or custom) */}
       <div className="space-y-1.5">

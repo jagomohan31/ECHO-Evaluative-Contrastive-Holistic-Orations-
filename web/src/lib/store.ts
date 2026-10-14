@@ -79,10 +79,8 @@ export const useSpeechLensStore = create<SpeechLensStore>((set, get) => ({
   },
 
   setSelectedSpeechId: (selectedSpeechId) => {
-    const s = get().speeches.find((sp) => sp.id === selectedSpeechId);
     set({
       selectedSpeechId,
-      customTranscript: s ? s.transcript : get().customTranscript,
       selectedRegionId: null,
       selectedWordIdx: null,
     });
