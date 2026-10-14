@@ -1,0 +1,17 @@
+{
+  "conservative_defaults": true,
+  "note": "fewer than 2 multi-reader speeches; using conservative defaults (DESIGN 8.2). Multi-reader speeches found: ['speech-001']",
+  "artic_rate_mean": 4.0,
+  "artic_rate_sd": 0.8,
+  "ln_share_sd": 0.18,
+  "pause_sd": 0.2,
+  "f0_mean_sd": 1.5,
+  "f0_slope_sd": 4.0,
+  "en_mean_sd": 3.0,
+  "en_slope_sd": 8.0,
+  "prominence_sd": 0.8,
+  "hnr_sd": 3.0,
+  "tilt_sd": 4.0,
+  "sigma_D": 0.12,
+  "sigma_win": 0.8
+}

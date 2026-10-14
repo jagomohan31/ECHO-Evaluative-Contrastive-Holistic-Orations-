@@ -1,0 +1,121 @@
+# SpeechLens source recordings
+# All licences verified at the URLs listed in licence_evidence.
+# Candidates that could not be verified are excluded.
+
+speeches:
+
+  # ── speech-001: The Gettysburg Address ──────────────────────────────────────
+  # Multiple LibriVox readers from the 150th Anniversary collection.
+  # Licence: CC0 / Public Domain Mark 1.0
+  # Text source: Wikisource https://en.wikisource.org/wiki/Gettysburg_Address
+
+  - id: speech-001_gettysburg_r1
+    speech_id: speech-001
+    reader_id: r1_amb
+    title: The Gettysburg Address
+    speaker: LibriVox volunteer (amb)
+    url: https://archive.org/download/gettysburgaddress_150anniv_1311_librivox/gettysburgaddress_lincoln_amb_64kb.mp3
+    sha256: TBD
+    licence: CC0
+    licence_evidence: https://archive.org/details/gettysburgaddress_150anniv_1311_librivox
+    retrieved_at: "2026-10-07"
+    kind: volunteer
+
+  - id: speech-001_gettysburg_r2
+    speech_id: speech-001
+    reader_id: r2_dj
+    title: The Gettysburg Address
+    speaker: LibriVox volunteer (dj)
+    url: https://archive.org/download/gettysburgaddress_150anniv_1311_librivox/gettysburgaddress_lincoln_dj_64kb.mp3
+    sha256: TBD
+    licence: CC0
+    licence_evidence: https://archive.org/details/gettysburgaddress_150anniv_1311_librivox
+    retrieved_at: "2026-10-07"
+    kind: volunteer
+
+  - id: speech-001_gettysburg_r3
+    speech_id: speech-001
+    reader_id: r3_dl
+    title: The Gettysburg Address
+    speaker: LibriVox volunteer (dl)
+    url: https://archive.org/download/gettysburgaddress_150anniv_1311_librivox/gettysburgaddress_lincoln_dl_64kb.mp3
+    sha256: TBD
+    licence: CC0
+    licence_evidence: https://archive.org/details/gettysburgaddress_150anniv_1311_librivox
+    retrieved_at: "2026-10-07"
+    kind: volunteer
+
+  - id: speech-001_gettysburg_r4
+    speech_id: speech-001
+    reader_id: r4_jn
+    title: The Gettysburg Address
+    speaker: LibriVox volunteer (jn)
+    url: https://archive.org/download/gettysburgaddress_150anniv_1311_librivox/gettysburgaddress_lincoln_jn_64kb.mp3
+    sha256: TBD
+    licence: CC0
+    licence_evidence: https://archive.org/details/gettysburgaddress_150anniv_1311_librivox
+    retrieved_at: "2026-10-07"
+    kind: volunteer
+
+  # ── speech-002: Lincoln Second Inaugural Address ──────────────────────────
+  # Multiple readers from Lincoln Inaugural Addresses LibriVox collection.
+  # Licence: Public Domain Mark 1.0
+  # Text source: Wikisource
+
+  - id: speech-002_secondinaugural_r1
+    speech_id: speech-002
+    reader_id: r1
+    title: Lincoln Second Inaugural Address
+    speaker: LibriVox volunteer
+    url: https://archive.org/download/lincolnsinauguraladdresses_1501_librivox/lincolnsinauguraladdresses_02_lincoln_64kb.mp3
+    sha256: TBD
+    licence: CC-PDM-1.0
+    licence_evidence: https://archive.org/details/lincolnsinauguraladdresses_1501_librivox
+    retrieved_at: "2026-10-07"
+    kind: volunteer
+
+  # ── speech-003: Patrick Henry "Give Me Liberty" ───────────────────────────
+  # LibriVox recording, public domain.
+  # Full speech ~9 min; we cut a 40-75s passage.
+  # Text source: Wikisource
+
+  - id: speech-003_patrickhenry_r1
+    speech_id: speech-003
+    reader_id: r1
+    title: Give Me Liberty or Give Me Death
+    speaker: LibriVox volunteer
+    url: https://archive.org/download/liberty_or_death_librivox/liberty_or_death_henry_64kb.mp3
+    sha256: TBD
+    licence: CC-PD
+    licence_evidence: https://archive.org/details/liberty_or_death_librivox
+    retrieved_at: "2026-10-07"
+    kind: volunteer
+
+  # Alternate reader from SNF nonfiction collection
+  - id: speech-003_patrickhenry_r2
+    speech_id: speech-003
+    reader_id: r2
+    title: Give Me Liberty or Give Me Death (alt)
+    speaker: LibriVox volunteer (nonfiction022)
+    url: https://archive.org/download/nonfiction022_librivox/snf022_bixbyletter_lincoln_dhd_64kb.mp3
+    sha256: TBD
+    licence: CC-PDM-1.0
+    licence_evidence: https://archive.org/details/nonfiction022_librivox
+    retrieved_at: "2026-10-07"
+    kind: volunteer
+
+  # ── speech-004: Emancipation Proclamation ────────────────────────────────
+  # LibriVox, public domain.
+  # ~5 min 41 s; cut a passage.
+
+  - id: speech-004_emancproclamation_r1
+    speech_id: speech-004
+    reader_id: r1
+    title: Emancipation Proclamation (excerpt)
+    speaker: LibriVox volunteer (cs)
+    url: https://archive.org/download/nonfiction005_librivox/emancipationproclamation_lincoln_cs_64kb.mp3
+    sha256: TBD
+    licence: CC-PD
+    licence_evidence: https://archive.org/details/nonfiction005_librivox
+    retrieved_at: "2026-10-07"
+    kind: volunteer

@@ -1,0 +1,1068 @@
+{
+  "model": "facebook/wav2vec2-base-960h",
+  "stride_s": 0.020006,
+  "duration_s": 70.0,
+  "words": [
+    {
+      "i": 0,
+      "text": "It",
+      "text_norm": "IT",
+      "punct_after": "",
+      "start": 0.0,
+      "end": 2.4807,
+      "score": 0.1254,
+      "nsyl": 1
+    },
+    {
+      "i": 1,
+      "text": "is",
+      "text_norm": "IS",
+      "punct_after": "",
+      "start": 2.4807,
+      "end": 5.3015,
+      "score": 0.1217,
+      "nsyl": 1
+    },
+    {
+      "i": 2,
+      "text": "in",
+      "text_norm": "IN",
+      "punct_after": "",
+      "start": 5.3015,
+      "end": 13.68,
+      "score": 0.0992,
+      "nsyl": 1
+    },
+    {
+      "i": 3,
+      "text": "vain",
+      "text_norm": "VAIN",
+      "punct_after": ",",
+      "start": 13.6839,
+      "end": 14.064,
+      "score": 0.4166,
+      "nsyl": 1
+    },
+    {
+      "i": 4,
+      "text": "sir",
+      "text_norm": "SIR",
+      "punct_after": ",",
+      "start": 14.064,
+      "end": 14.44,
+      "score": 0.3739,
+      "nsyl": 1
+    },
+    {
+      "i": 5,
+      "text": "to",
+      "text_norm": "TO",
+      "punct_after": "",
+      "start": 14.4441,
+      "end": 14.6042,
+      "score": 0.6856,
+      "nsyl": 1
+    },
+    {
+      "i": 6,
+      "text": "extenuate",
+      "text_norm": "EXTENUATE",
+      "punct_after": "",
+      "start": 14.6042,
+      "end": 15.5,
+      "score": 0.3376,
+      "nsyl": 4
+    },
+    {
+      "i": 7,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 15.5044,
+      "end": 15.6445,
+      "score": 0.8372,
+      "nsyl": 1
+    },
+    {
+      "i": 8,
+      "text": "matter",
+      "text_norm": "MATTER",
+      "punct_after": ".",
+      "start": 15.6445,
+      "end": 16.8048,
+      "score": 0.166,
+      "nsyl": 2
+    },
+    {
+      "i": 9,
+      "text": "Gentlemen",
+      "text_norm": "GENTLEMEN",
+      "punct_after": "",
+      "start": 16.8048,
+      "end": 17.385,
+      "score": 0.4515,
+      "nsyl": 3
+    },
+    {
+      "i": 10,
+      "text": "may",
+      "text_norm": "MAY",
+      "punct_after": "",
+      "start": 17.385,
+      "end": 17.62,
+      "score": 0.4969,
+      "nsyl": 1
+    },
+    {
+      "i": 11,
+      "text": "cry",
+      "text_norm": "CRY",
+      "punct_after": ",",
+      "start": 17.625,
+      "end": 18.42,
+      "score": 0.2465,
+      "nsyl": 1
+    },
+    {
+      "i": 12,
+      "text": "peace",
+      "text_norm": "PEACE",
+      "punct_after": ",",
+      "start": 18.4253,
+      "end": 19.22,
+      "score": 0.2572,
+      "nsyl": 1
+    },
+    {
+      "i": 13,
+      "text": "peace",
+      "text_norm": "PEACE",
+      "punct_after": ",",
+      "start": 19.2255,
+      "end": 20.4,
+      "score": 0.2036,
+      "nsyl": 1
+    },
+    {
+      "i": 14,
+      "text": "but",
+      "text_norm": "BUT",
+      "punct_after": "",
+      "start": 20.4058,
+      "end": 20.62,
+      "score": 0.5748,
+      "nsyl": 1
+    },
+    {
+      "i": 15,
+      "text": "there",
+      "text_norm": "THERE",
+      "punct_after": "",
+      "start": 20.6259,
+      "end": 20.966,
+      "score": 0.6329,
+      "nsyl": 1
+    },
+    {
+      "i": 16,
+      "text": "is",
+      "text_norm": "IS",
+      "punct_after": "",
+      "start": 20.966,
+      "end": 21.2061,
+      "score": 0.5109,
+      "nsyl": 1
+    },
+    {
+      "i": 17,
+      "text": "no",
+      "text_norm": "NO",
+      "punct_after": "",
+      "start": 21.2061,
+      "end": 21.56,
+      "score": 0.2601,
+      "nsyl": 1
+    },
+    {
+      "i": 18,
+      "text": "peace",
+      "text_norm": "PEACE",
+      "punct_after": ".",
+      "start": 21.5662,
+      "end": 22.0463,
+      "score": 0.4198,
+      "nsyl": 1
+    },
+    {
+      "i": 19,
+      "text": "The",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 22.0463,
+      "end": 23.1866,
+      "score": 0.0898,
+      "nsyl": 1
+    },
+    {
+      "i": 20,
+      "text": "war",
+      "text_norm": "WAR",
+      "punct_after": "",
+      "start": 23.1866,
+      "end": 23.5267,
+      "score": 0.3851,
+      "nsyl": 1
+    },
+    {
+      "i": 21,
+      "text": "is",
+      "text_norm": "IS",
+      "punct_after": "",
+      "start": 23.5267,
+      "end": 23.7868,
+      "score": 0.4809,
+      "nsyl": 1
+    },
+    {
+      "i": 22,
+      "text": "actually",
+      "text_norm": "ACTUALLY",
+      "punct_after": "",
+      "start": 23.7868,
+      "end": 24.3069,
+      "score": 0.4726,
+      "nsyl": 4
+    },
+    {
+      "i": 23,
+      "text": "begun",
+      "text_norm": "BEGUN",
+      "punct_after": ".",
+      "start": 24.3069,
+      "end": 24.9071,
+      "score": 0.3321,
+      "nsyl": 2
+    },
+    {
+      "i": 24,
+      "text": "The",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 24.9071,
+      "end": 25.8274,
+      "score": 0.1059,
+      "nsyl": 1
+    },
+    {
+      "i": 25,
+      "text": "next",
+      "text_norm": "NEXT",
+      "punct_after": "",
+      "start": 25.8274,
+      "end": 26.2,
+      "score": 0.4481,
+      "nsyl": 1
+    },
+    {
+      "i": 26,
+      "text": "gale",
+      "text_norm": "GALE",
+      "punct_after": "",
+      "start": 26.2075,
+      "end": 26.5876,
+      "score": 0.3399,
+      "nsyl": 1
+    },
+    {
+      "i": 27,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 26.5876,
+      "end": 26.78,
+      "score": 0.6623,
+      "nsyl": 1
+    },
+    {
+      "i": 28,
+      "text": "sweeps",
+      "text_norm": "SWEEPS",
+      "punct_after": "",
+      "start": 26.7877,
+      "end": 27.18,
+      "score": 0.4922,
+      "nsyl": 1
+    },
+    {
+      "i": 29,
+      "text": "from",
+      "text_norm": "FROM",
+      "punct_after": "",
+      "start": 27.1878,
+      "end": 27.3878,
+      "score": 0.6414,
+      "nsyl": 1
+    },
+    {
+      "i": 30,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 27.3878,
+      "end": 27.5079,
+      "score": 0.9127,
+      "nsyl": 1
+    },
+    {
+      "i": 31,
+      "text": "north",
+      "text_norm": "NORTH",
+      "punct_after": "",
+      "start": 27.5079,
+      "end": 27.7679,
+      "score": 0.7302,
+      "nsyl": 1
+    },
+    {
+      "i": 32,
+      "text": "will",
+      "text_norm": "WILL",
+      "punct_after": "",
+      "start": 27.7679,
+      "end": 28.02,
+      "score": 0.5397,
+      "nsyl": 1
+    },
+    {
+      "i": 33,
+      "text": "bring",
+      "text_norm": "BRING",
+      "punct_after": "",
+      "start": 28.028,
+      "end": 28.34,
+      "score": 0.5622,
+      "nsyl": 1
+    },
+    {
+      "i": 34,
+      "text": "to",
+      "text_norm": "TO",
+      "punct_after": "",
+      "start": 28.3481,
+      "end": 28.6282,
+      "score": 0.3808,
+      "nsyl": 1
+    },
+    {
+      "i": 35,
+      "text": "our",
+      "text_norm": "OUR",
+      "punct_after": "",
+      "start": 28.6282,
+      "end": 28.8082,
+      "score": 0.8134,
+      "nsyl": 2
+    },
+    {
+      "i": 36,
+      "text": "ears",
+      "text_norm": "EARS",
+      "punct_after": "",
+      "start": 28.8082,
+      "end": 29.1483,
+      "score": 0.5978,
+      "nsyl": 1
+    },
+    {
+      "i": 37,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 29.1483,
+      "end": 29.34,
+      "score": 0.5812,
+      "nsyl": 1
+    },
+    {
+      "i": 38,
+      "text": "clash",
+      "text_norm": "CLASH",
+      "punct_after": "",
+      "start": 29.3484,
+      "end": 29.7885,
+      "score": 0.3904,
+      "nsyl": 1
+    },
+    {
+      "i": 39,
+      "text": "of",
+      "text_norm": "OF",
+      "punct_after": "",
+      "start": 29.7885,
+      "end": 29.9286,
+      "score": 0.8577,
+      "nsyl": 1
+    },
+    {
+      "i": 40,
+      "text": "resounding",
+      "text_norm": "RESOUNDING",
+      "punct_after": "",
+      "start": 29.9286,
+      "end": 30.8688,
+      "score": 0.3742,
+      "nsyl": 3
+    },
+    {
+      "i": 41,
+      "text": "arms",
+      "text_norm": "ARMS",
+      "punct_after": ".",
+      "start": 30.8688,
+      "end": 31.2889,
+      "score": 0.4868,
+      "nsyl": 1
+    },
+    {
+      "i": 42,
+      "text": "Our",
+      "text_norm": "OUR",
+      "punct_after": "",
+      "start": 31.2889,
+      "end": 32.64,
+      "score": 0.0817,
+      "nsyl": 2
+    },
+    {
+      "i": 43,
+      "text": "brethren",
+      "text_norm": "BRETHREN",
+      "punct_after": "",
+      "start": 32.6493,
+      "end": 33.1695,
+      "score": 0.5452,
+      "nsyl": 2
+    },
+    {
+      "i": 44,
+      "text": "are",
+      "text_norm": "ARE",
+      "punct_after": "",
+      "start": 33.1695,
+      "end": 33.3895,
+      "score": 0.7057,
+      "nsyl": 1
+    },
+    {
+      "i": 45,
+      "text": "already",
+      "text_norm": "ALREADY",
+      "punct_after": "",
+      "start": 33.3895,
+      "end": 34.0097,
+      "score": 0.4119,
+      "nsyl": 3
+    },
+    {
+      "i": 46,
+      "text": "in",
+      "text_norm": "IN",
+      "punct_after": "",
+      "start": 34.0097,
+      "end": 34.1097,
+      "score": 0.8071,
+      "nsyl": 1
+    },
+    {
+      "i": 47,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 34.1097,
+      "end": 34.24,
+      "score": 0.9112,
+      "nsyl": 1
+    },
+    {
+      "i": 48,
+      "text": "field",
+      "text_norm": "FIELD",
+      "punct_after": ".",
+      "start": 34.2498,
+      "end": 35.11,
+      "score": 0.2554,
+      "nsyl": 1
+    },
+    {
+      "i": 49,
+      "text": "Why",
+      "text_norm": "WHY",
+      "punct_after": "",
+      "start": 35.11,
+      "end": 35.5101,
+      "score": 0.3274,
+      "nsyl": 1
+    },
+    {
+      "i": 50,
+      "text": "stand",
+      "text_norm": "STAND",
+      "punct_after": "",
+      "start": 35.5101,
+      "end": 36.0903,
+      "score": 0.3266,
+      "nsyl": 1
+    },
+    {
+      "i": 51,
+      "text": "we",
+      "text_norm": "WE",
+      "punct_after": "",
+      "start": 36.0903,
+      "end": 36.69,
+      "score": 0.244,
+      "nsyl": 1
+    },
+    {
+      "i": 52,
+      "text": "here",
+      "text_norm": "HERE",
+      "punct_after": "",
+      "start": 36.6905,
+      "end": 37.21,
+      "score": 0.3785,
+      "nsyl": 1
+    },
+    {
+      "i": 53,
+      "text": "idle",
+      "text_norm": "IDLE",
+      "punct_after": "?",
+      "start": 37.2106,
+      "end": 38.8311,
+      "score": 0.0445,
+      "nsyl": 2
+    },
+    {
+      "i": 54,
+      "text": "What",
+      "text_norm": "WHAT",
+      "punct_after": "",
+      "start": 38.8311,
+      "end": 39.3112,
+      "score": 0.3837,
+      "nsyl": 1
+    },
+    {
+      "i": 55,
+      "text": "is",
+      "text_norm": "IS",
+      "punct_after": "",
+      "start": 39.3112,
+      "end": 39.5313,
+      "score": 0.3733,
+      "nsyl": 1
+    },
+    {
+      "i": 56,
+      "text": "it",
+      "text_norm": "IT",
+      "punct_after": "",
+      "start": 39.5313,
+      "end": 39.67,
+      "score": 0.5779,
+      "nsyl": 1
+    },
+    {
+      "i": 57,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 39.6713,
+      "end": 39.9114,
+      "score": 0.4747,
+      "nsyl": 1
+    },
+    {
+      "i": 58,
+      "text": "gentlemen",
+      "text_norm": "GENTLEMEN",
+      "punct_after": "",
+      "start": 39.9114,
+      "end": 40.4916,
+      "score": 0.4644,
+      "nsyl": 3
+    },
+    {
+      "i": 59,
+      "text": "wish",
+      "text_norm": "WISH",
+      "punct_after": "?",
+      "start": 40.4916,
+      "end": 41.852,
+      "score": 0.1321,
+      "nsyl": 1
+    },
+    {
+      "i": 60,
+      "text": "What",
+      "text_norm": "WHAT",
+      "punct_after": "",
+      "start": 41.852,
+      "end": 42.1921,
+      "score": 0.4703,
+      "nsyl": 1
+    },
+    {
+      "i": 61,
+      "text": "would",
+      "text_norm": "WOULD",
+      "punct_after": "",
+      "start": 42.1921,
+      "end": 42.4321,
+      "score": 0.6828,
+      "nsyl": 1
+    },
+    {
+      "i": 62,
+      "text": "they",
+      "text_norm": "THEY",
+      "punct_after": "",
+      "start": 42.4321,
+      "end": 42.6522,
+      "score": 0.8288,
+      "nsyl": 1
+    },
+    {
+      "i": 63,
+      "text": "have",
+      "text_norm": "HAVE",
+      "punct_after": "?",
+      "start": 42.6522,
+      "end": 44.2126,
+      "score": 0.1442,
+      "nsyl": 1
+    },
+    {
+      "i": 64,
+      "text": "Is",
+      "text_norm": "IS",
+      "punct_after": "",
+      "start": 44.2126,
+      "end": 44.4927,
+      "score": 0.355,
+      "nsyl": 1
+    },
+    {
+      "i": 65,
+      "text": "life",
+      "text_norm": "LIFE",
+      "punct_after": "",
+      "start": 44.4927,
+      "end": 44.8728,
+      "score": 0.2907,
+      "nsyl": 1
+    },
+    {
+      "i": 66,
+      "text": "so",
+      "text_norm": "SO",
+      "punct_after": "",
+      "start": 44.8728,
+      "end": 45.27,
+      "score": 0.1923,
+      "nsyl": 1
+    },
+    {
+      "i": 67,
+      "text": "dear",
+      "text_norm": "DEAR",
+      "punct_after": ",",
+      "start": 45.2729,
+      "end": 46.39,
+      "score": 0.2091,
+      "nsyl": 1
+    },
+    {
+      "i": 68,
+      "text": "or",
+      "text_norm": "OR",
+      "punct_after": "",
+      "start": 46.3933,
+      "end": 46.81,
+      "score": 0.3505,
+      "nsyl": 1
+    },
+    {
+      "i": 69,
+      "text": "peace",
+      "text_norm": "PEACE",
+      "punct_after": "",
+      "start": 46.8134,
+      "end": 47.2135,
+      "score": 0.4471,
+      "nsyl": 1
+    },
+    {
+      "i": 70,
+      "text": "so",
+      "text_norm": "SO",
+      "punct_after": "",
+      "start": 47.2135,
+      "end": 47.6936,
+      "score": 0.2071,
+      "nsyl": 1
+    },
+    {
+      "i": 71,
+      "text": "sweet",
+      "text_norm": "SWEET",
+      "punct_after": ",",
+      "start": 47.6936,
+      "end": 49.174,
+      "score": 0.1464,
+      "nsyl": 1
+    },
+    {
+      "i": 72,
+      "text": "as",
+      "text_norm": "AS",
+      "punct_after": "",
+      "start": 49.174,
+      "end": 49.3541,
+      "score": 0.5732,
+      "nsyl": 1
+    },
+    {
+      "i": 73,
+      "text": "to",
+      "text_norm": "TO",
+      "punct_after": "",
+      "start": 49.3541,
+      "end": 49.4941,
+      "score": 0.6669,
+      "nsyl": 1
+    },
+    {
+      "i": 74,
+      "text": "be",
+      "text_norm": "BE",
+      "punct_after": "",
+      "start": 49.4941,
+      "end": 49.6342,
+      "score": 0.701,
+      "nsyl": 1
+    },
+    {
+      "i": 75,
+      "text": "purchased",
+      "text_norm": "PURCHASED",
+      "punct_after": "",
+      "start": 49.6342,
+      "end": 50.17,
+      "score": 0.5743,
+      "nsyl": 2
+    },
+    {
+      "i": 76,
+      "text": "at",
+      "text_norm": "AT",
+      "punct_after": "",
+      "start": 50.1743,
+      "end": 50.2544,
+      "score": 0.9971,
+      "nsyl": 1
+    },
+    {
+      "i": 77,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 50.2544,
+      "end": 50.41,
+      "score": 0.9154,
+      "nsyl": 1
+    },
+    {
+      "i": 78,
+      "text": "price",
+      "text_norm": "PRICE",
+      "punct_after": "",
+      "start": 50.4144,
+      "end": 50.8345,
+      "score": 0.3836,
+      "nsyl": 1
+    },
+    {
+      "i": 79,
+      "text": "of",
+      "text_norm": "OF",
+      "punct_after": "",
+      "start": 50.8345,
+      "end": 51.0346,
+      "score": 0.4041,
+      "nsyl": 1
+    },
+    {
+      "i": 80,
+      "text": "chains",
+      "text_norm": "CHAINS",
+      "punct_after": "",
+      "start": 51.0346,
+      "end": 51.7748,
+      "score": 0.2086,
+      "nsyl": 1
+    },
+    {
+      "i": 81,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 51.7748,
+      "end": 52.0349,
+      "score": 0.4403,
+      "nsyl": 1
+    },
+    {
+      "i": 82,
+      "text": "slavery",
+      "text_norm": "SLAVERY",
+      "punct_after": "?",
+      "start": 52.0349,
+      "end": 53.93,
+      "score": 0.1891,
+      "nsyl": 3
+    },
+    {
+      "i": 83,
+      "text": "Forbid",
+      "text_norm": "FORBID",
+      "punct_after": "",
+      "start": 53.9354,
+      "end": 54.7556,
+      "score": 0.1268,
+      "nsyl": 2
+    },
+    {
+      "i": 84,
+      "text": "it",
+      "text_norm": "IT",
+      "punct_after": ",",
+      "start": 54.7556,
+      "end": 55.1958,
+      "score": 0.2162,
+      "nsyl": 1
+    },
+    {
+      "i": 85,
+      "text": "Almighty",
+      "text_norm": "ALMIGHTY",
+      "punct_after": "",
+      "start": 55.1958,
+      "end": 55.6759,
+      "score": 0.3688,
+      "nsyl": 3
+    },
+    {
+      "i": 86,
+      "text": "God",
+      "text_norm": "GOD",
+      "punct_after": ".",
+      "start": 55.6759,
+      "end": 57.0163,
+      "score": 0.0676,
+      "nsyl": 1
+    },
+    {
+      "i": 87,
+      "text": "I",
+      "text_norm": "I",
+      "punct_after": "",
+      "start": 57.0163,
+      "end": 57.1363,
+      "score": 0.4886,
+      "nsyl": 1
+    },
+    {
+      "i": 88,
+      "text": "know",
+      "text_norm": "KNOW",
+      "punct_after": "",
+      "start": 57.1363,
+      "end": 57.4164,
+      "score": 0.5321,
+      "nsyl": 1
+    },
+    {
+      "i": 89,
+      "text": "not",
+      "text_norm": "NOT",
+      "punct_after": "",
+      "start": 57.4164,
+      "end": 57.7165,
+      "score": 0.4017,
+      "nsyl": 1
+    },
+    {
+      "i": 90,
+      "text": "what",
+      "text_norm": "WHAT",
+      "punct_after": "",
+      "start": 57.7165,
+      "end": 57.9566,
+      "score": 0.5579,
+      "nsyl": 1
+    },
+    {
+      "i": 91,
+      "text": "course",
+      "text_norm": "COURSE",
+      "punct_after": "",
+      "start": 57.9566,
+      "end": 58.3567,
+      "score": 0.4086,
+      "nsyl": 1
+    },
+    {
+      "i": 92,
+      "text": "others",
+      "text_norm": "OTHERS",
+      "punct_after": "",
+      "start": 58.3567,
+      "end": 58.7768,
+      "score": 0.5134,
+      "nsyl": 2
+    },
+    {
+      "i": 93,
+      "text": "may",
+      "text_norm": "MAY",
+      "punct_after": "",
+      "start": 58.7768,
+      "end": 59.0969,
+      "score": 0.421,
+      "nsyl": 1
+    },
+    {
+      "i": 94,
+      "text": "take",
+      "text_norm": "TAKE",
+      "punct_after": ",",
+      "start": 59.0969,
+      "end": 59.97,
+      "score": 0.1807,
+      "nsyl": 1
+    },
+    {
+      "i": 95,
+      "text": "but",
+      "text_norm": "BUT",
+      "punct_after": "",
+      "start": 59.9771,
+      "end": 60.3372,
+      "score": 0.3478,
+      "nsyl": 1
+    },
+    {
+      "i": 96,
+      "text": "as",
+      "text_norm": "AS",
+      "punct_after": "",
+      "start": 60.3372,
+      "end": 60.57,
+      "score": 0.4876,
+      "nsyl": 1
+    },
+    {
+      "i": 97,
+      "text": "for",
+      "text_norm": "FOR",
+      "punct_after": "",
+      "start": 60.5773,
+      "end": 60.9574,
+      "score": 0.325,
+      "nsyl": 1
+    },
+    {
+      "i": 98,
+      "text": "me",
+      "text_norm": "ME",
+      "punct_after": ",",
+      "start": 60.9574,
+      "end": 61.8977,
+      "score": 0.1912,
+      "nsyl": 1
+    },
+    {
+      "i": 99,
+      "text": "give",
+      "text_norm": "GIVE",
+      "punct_after": "",
+      "start": 61.8977,
+      "end": 62.2178,
+      "score": 0.3737,
+      "nsyl": 1
+    },
+    {
+      "i": 100,
+      "text": "me",
+      "text_norm": "ME",
+      "punct_after": "",
+      "start": 62.2178,
+      "end": 62.5379,
+      "score": 0.3174,
+      "nsyl": 1
+    },
+    {
+      "i": 101,
+      "text": "liberty",
+      "text_norm": "LIBERTY",
+      "punct_after": ",",
+      "start": 62.5379,
+      "end": 63.6582,
+      "score": 0.2078,
+      "nsyl": 3
+    },
+    {
+      "i": 102,
+      "text": "or",
+      "text_norm": "OR",
+      "punct_after": "",
+      "start": 63.6582,
+      "end": 64.11,
+      "score": 0.1509,
+      "nsyl": 1
+    },
+    {
+      "i": 103,
+      "text": "give",
+      "text_norm": "GIVE",
+      "punct_after": "",
+      "start": 64.1183,
+      "end": 64.4384,
+      "score": 0.4974,
+      "nsyl": 1
+    },
+    {
+      "i": 104,
+      "text": "me",
+      "text_norm": "ME",
+      "punct_after": "",
+      "start": 64.4384,
+      "end": 64.8585,
+      "score": 0.2885,
+      "nsyl": 1
+    },
+    {
+      "i": 105,
+      "text": "death",
+      "text_norm": "DEATH",
+      "punct_after": ".",
+      "start": 64.8585,
+      "end": 70.0,
+      "score": 0.0023,
+      "nsyl": 1
+    }
+  ],
+  "pauses": []
+}

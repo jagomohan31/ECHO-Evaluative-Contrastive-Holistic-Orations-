@@ -1,0 +1,918 @@
+{
+  "model": "facebook/wav2vec2-base-960h",
+  "stride_s": 0.020005,
+  "duration_s": 75.0,
+  "words": [
+    {
+      "i": 0,
+      "text": "Four",
+      "text_norm": "FOUR",
+      "punct_after": "",
+      "start": 0.0,
+      "end": 2.3606,
+      "score": 0.0923,
+      "nsyl": 1
+    },
+    {
+      "i": 1,
+      "text": "score",
+      "text_norm": "SCORE",
+      "punct_after": "",
+      "start": 2.3606,
+      "end": 5.66,
+      "score": 0.0935,
+      "nsyl": 1
+    },
+    {
+      "i": 2,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 5.6615,
+      "end": 8.8824,
+      "score": 0.0667,
+      "nsyl": 1
+    },
+    {
+      "i": 3,
+      "text": "seven",
+      "text_norm": "SEVEN",
+      "punct_after": "",
+      "start": 8.8824,
+      "end": 9.2425,
+      "score": 0.4527,
+      "nsyl": 2
+    },
+    {
+      "i": 4,
+      "text": "years",
+      "text_norm": "YEARS",
+      "punct_after": "",
+      "start": 9.2425,
+      "end": 9.5425,
+      "score": 0.6677,
+      "nsyl": 1
+    },
+    {
+      "i": 5,
+      "text": "ago",
+      "text_norm": "AGO",
+      "punct_after": "",
+      "start": 9.5425,
+      "end": 10.3828,
+      "score": 0.1919,
+      "nsyl": 2
+    },
+    {
+      "i": 6,
+      "text": "our",
+      "text_norm": "OUR",
+      "punct_after": "",
+      "start": 10.3828,
+      "end": 10.5828,
+      "score": 0.4967,
+      "nsyl": 2
+    },
+    {
+      "i": 7,
+      "text": "fathers",
+      "text_norm": "FATHERS",
+      "punct_after": "",
+      "start": 10.5828,
+      "end": 11.16,
+      "score": 0.4562,
+      "nsyl": 2
+    },
+    {
+      "i": 8,
+      "text": "brought",
+      "text_norm": "BROUGHT",
+      "punct_after": "",
+      "start": 11.163,
+      "end": 11.4831,
+      "score": 0.7705,
+      "nsyl": 1
+    },
+    {
+      "i": 9,
+      "text": "forth",
+      "text_norm": "FORTH",
+      "punct_after": "",
+      "start": 11.4831,
+      "end": 12.1032,
+      "score": 0.3515,
+      "nsyl": 1
+    },
+    {
+      "i": 10,
+      "text": "on",
+      "text_norm": "ON",
+      "punct_after": "",
+      "start": 12.1032,
+      "end": 12.2633,
+      "score": 0.8162,
+      "nsyl": 1
+    },
+    {
+      "i": 11,
+      "text": "this",
+      "text_norm": "THIS",
+      "punct_after": "",
+      "start": 12.2633,
+      "end": 12.5033,
+      "score": 0.7371,
+      "nsyl": 1
+    },
+    {
+      "i": 12,
+      "text": "continent",
+      "text_norm": "CONTINENT",
+      "punct_after": ",",
+      "start": 12.5033,
+      "end": 13.2435,
+      "score": 0.4481,
+      "nsyl": 3
+    },
+    {
+      "i": 13,
+      "text": "a",
+      "text_norm": "A",
+      "punct_after": "",
+      "start": 13.2435,
+      "end": 13.3636,
+      "score": 0.4041,
+      "nsyl": 1
+    },
+    {
+      "i": 14,
+      "text": "new",
+      "text_norm": "NEW",
+      "punct_after": "",
+      "start": 13.3636,
+      "end": 13.6436,
+      "score": 0.4321,
+      "nsyl": 1
+    },
+    {
+      "i": 15,
+      "text": "nation",
+      "text_norm": "NATION",
+      "punct_after": ",",
+      "start": 13.6436,
+      "end": 14.7439,
+      "score": 0.2045,
+      "nsyl": 2
+    },
+    {
+      "i": 16,
+      "text": "conceived",
+      "text_norm": "CONCEIVED",
+      "punct_after": "",
+      "start": 14.7439,
+      "end": 15.2441,
+      "score": 0.617,
+      "nsyl": 2
+    },
+    {
+      "i": 17,
+      "text": "in",
+      "text_norm": "IN",
+      "punct_after": "",
+      "start": 15.2441,
+      "end": 15.3441,
+      "score": 0.9732,
+      "nsyl": 1
+    },
+    {
+      "i": 18,
+      "text": "Liberty",
+      "text_norm": "LIBERTY",
+      "punct_after": ",",
+      "start": 15.3441,
+      "end": 16.3244,
+      "score": 0.2745,
+      "nsyl": 3
+    },
+    {
+      "i": 19,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 16.3244,
+      "end": 16.4444,
+      "score": 0.9931,
+      "nsyl": 1
+    },
+    {
+      "i": 20,
+      "text": "dedicated",
+      "text_norm": "DEDICATED",
+      "punct_after": "",
+      "start": 16.4444,
+      "end": 17.18,
+      "score": 0.4585,
+      "nsyl": 4
+    },
+    {
+      "i": 21,
+      "text": "to",
+      "text_norm": "TO",
+      "punct_after": "",
+      "start": 17.1846,
+      "end": 17.3246,
+      "score": 0.6393,
+      "nsyl": 1
+    },
+    {
+      "i": 22,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 17.3246,
+      "end": 17.4246,
+      "score": 0.9911,
+      "nsyl": 1
+    },
+    {
+      "i": 23,
+      "text": "proposition",
+      "text_norm": "PROPOSITION",
+      "punct_after": "",
+      "start": 17.4246,
+      "end": 18.1448,
+      "score": 0.5188,
+      "nsyl": 4
+    },
+    {
+      "i": 24,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 18.1448,
+      "end": 18.725,
+      "score": 0.2731,
+      "nsyl": 1
+    },
+    {
+      "i": 25,
+      "text": "all",
+      "text_norm": "ALL",
+      "punct_after": "",
+      "start": 18.725,
+      "end": 18.9651,
+      "score": 0.543,
+      "nsyl": 1
+    },
+    {
+      "i": 26,
+      "text": "men",
+      "text_norm": "MEN",
+      "punct_after": "",
+      "start": 18.9651,
+      "end": 19.4652,
+      "score": 0.3961,
+      "nsyl": 1
+    },
+    {
+      "i": 27,
+      "text": "are",
+      "text_norm": "ARE",
+      "punct_after": "",
+      "start": 19.4652,
+      "end": 19.6452,
+      "score": 0.8496,
+      "nsyl": 1
+    },
+    {
+      "i": 28,
+      "text": "created",
+      "text_norm": "CREATED",
+      "punct_after": "",
+      "start": 19.6452,
+      "end": 20.2654,
+      "score": 0.4579,
+      "nsyl": 3
+    },
+    {
+      "i": 29,
+      "text": "equal",
+      "text_norm": "EQUAL",
+      "punct_after": ".",
+      "start": 20.2654,
+      "end": 20.6855,
+      "score": 0.4723,
+      "nsyl": 2
+    },
+    {
+      "i": 30,
+      "text": "Now",
+      "text_norm": "NOW",
+      "punct_after": "",
+      "start": 20.6855,
+      "end": 22.1459,
+      "score": 0.0883,
+      "nsyl": 1
+    },
+    {
+      "i": 31,
+      "text": "we",
+      "text_norm": "WE",
+      "punct_after": "",
+      "start": 22.1459,
+      "end": 22.3059,
+      "score": 0.5266,
+      "nsyl": 1
+    },
+    {
+      "i": 32,
+      "text": "are",
+      "text_norm": "ARE",
+      "punct_after": "",
+      "start": 22.3059,
+      "end": 22.446,
+      "score": 0.855,
+      "nsyl": 1
+    },
+    {
+      "i": 33,
+      "text": "engaged",
+      "text_norm": "ENGAGED",
+      "punct_after": "",
+      "start": 22.446,
+      "end": 23.0461,
+      "score": 0.4742,
+      "nsyl": 2
+    },
+    {
+      "i": 34,
+      "text": "in",
+      "text_norm": "IN",
+      "punct_after": "",
+      "start": 23.0461,
+      "end": 23.1662,
+      "score": 0.9949,
+      "nsyl": 1
+    },
+    {
+      "i": 35,
+      "text": "a",
+      "text_norm": "A",
+      "punct_after": "",
+      "start": 23.1662,
+      "end": 23.2462,
+      "score": 0.9698,
+      "nsyl": 1
+    },
+    {
+      "i": 36,
+      "text": "great",
+      "text_norm": "GREAT",
+      "punct_after": "",
+      "start": 23.2462,
+      "end": 23.6863,
+      "score": 0.4732,
+      "nsyl": 1
+    },
+    {
+      "i": 37,
+      "text": "civil",
+      "text_norm": "CIVIL",
+      "punct_after": "",
+      "start": 23.6863,
+      "end": 24.0664,
+      "score": 0.5403,
+      "nsyl": 2
+    },
+    {
+      "i": 38,
+      "text": "war",
+      "text_norm": "WAR",
+      "punct_after": ",",
+      "start": 24.0664,
+      "end": 24.4865,
+      "score": 0.4295,
+      "nsyl": 1
+    },
+    {
+      "i": 39,
+      "text": "testing",
+      "text_norm": "TESTING",
+      "punct_after": "",
+      "start": 24.4865,
+      "end": 25.4268,
+      "score": 0.2217,
+      "nsyl": 2
+    },
+    {
+      "i": 40,
+      "text": "whether",
+      "text_norm": "WHETHER",
+      "punct_after": "",
+      "start": 25.4268,
+      "end": 25.7869,
+      "score": 0.7664,
+      "nsyl": 2
+    },
+    {
+      "i": 41,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 25.7869,
+      "end": 26.0469,
+      "score": 0.7592,
+      "nsyl": 1
+    },
+    {
+      "i": 42,
+      "text": "nation",
+      "text_norm": "NATION",
+      "punct_after": ",",
+      "start": 26.0469,
+      "end": 26.7871,
+      "score": 0.3223,
+      "nsyl": 2
+    },
+    {
+      "i": 43,
+      "text": "or",
+      "text_norm": "OR",
+      "punct_after": "",
+      "start": 26.7871,
+      "end": 26.9872,
+      "score": 0.4048,
+      "nsyl": 1
+    },
+    {
+      "i": 44,
+      "text": "any",
+      "text_norm": "ANY",
+      "punct_after": "",
+      "start": 26.9872,
+      "end": 27.2073,
+      "score": 0.5387,
+      "nsyl": 2
+    },
+    {
+      "i": 45,
+      "text": "nation",
+      "text_norm": "NATION",
+      "punct_after": "",
+      "start": 27.2073,
+      "end": 27.7074,
+      "score": 0.4913,
+      "nsyl": 2
+    },
+    {
+      "i": 46,
+      "text": "so",
+      "text_norm": "SO",
+      "punct_after": "",
+      "start": 27.7074,
+      "end": 28.2275,
+      "score": 0.1647,
+      "nsyl": 1
+    },
+    {
+      "i": 47,
+      "text": "conceived",
+      "text_norm": "CONCEIVED",
+      "punct_after": "",
+      "start": 28.2275,
+      "end": 29.3878,
+      "score": 0.2266,
+      "nsyl": 2
+    },
+    {
+      "i": 48,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 29.3878,
+      "end": 29.5679,
+      "score": 0.6378,
+      "nsyl": 1
+    },
+    {
+      "i": 49,
+      "text": "so",
+      "text_norm": "SO",
+      "punct_after": "",
+      "start": 29.5679,
+      "end": 29.7879,
+      "score": 0.3436,
+      "nsyl": 1
+    },
+    {
+      "i": 50,
+      "text": "dedicated",
+      "text_norm": "DEDICATED",
+      "punct_after": ",",
+      "start": 29.7879,
+      "end": 30.8082,
+      "score": 0.2724,
+      "nsyl": 4
+    },
+    {
+      "i": 51,
+      "text": "can",
+      "text_norm": "CAN",
+      "punct_after": "",
+      "start": 30.8082,
+      "end": 31.0083,
+      "score": 0.5598,
+      "nsyl": 1
+    },
+    {
+      "i": 52,
+      "text": "long",
+      "text_norm": "LONG",
+      "punct_after": "",
+      "start": 31.0083,
+      "end": 31.3284,
+      "score": 0.5142,
+      "nsyl": 1
+    },
+    {
+      "i": 53,
+      "text": "endure",
+      "text_norm": "ENDURE",
+      "punct_after": ".",
+      "start": 31.3284,
+      "end": 32.64,
+      "score": 0.2077,
+      "nsyl": 2
+    },
+    {
+      "i": 54,
+      "text": "We",
+      "text_norm": "WE",
+      "punct_after": "",
+      "start": 32.6487,
+      "end": 32.8488,
+      "score": 0.5342,
+      "nsyl": 1
+    },
+    {
+      "i": 55,
+      "text": "are",
+      "text_norm": "ARE",
+      "punct_after": "",
+      "start": 32.8488,
+      "end": 32.9888,
+      "score": 0.7673,
+      "nsyl": 1
+    },
+    {
+      "i": 56,
+      "text": "met",
+      "text_norm": "MET",
+      "punct_after": "",
+      "start": 32.9888,
+      "end": 33.48,
+      "score": 0.2812,
+      "nsyl": 1
+    },
+    {
+      "i": 57,
+      "text": "on",
+      "text_norm": "ON",
+      "punct_after": "",
+      "start": 33.4889,
+      "end": 33.689,
+      "score": 0.4995,
+      "nsyl": 1
+    },
+    {
+      "i": 58,
+      "text": "a",
+      "text_norm": "A",
+      "punct_after": "",
+      "start": 33.689,
+      "end": 33.749,
+      "score": 0.9987,
+      "nsyl": 1
+    },
+    {
+      "i": 59,
+      "text": "great",
+      "text_norm": "GREAT",
+      "punct_after": "",
+      "start": 33.749,
+      "end": 34.0091,
+      "score": 0.784,
+      "nsyl": 1
+    },
+    {
+      "i": 60,
+      "text": "battle-field",
+      "text_norm": "BATTLE FIELD",
+      "punct_after": "",
+      "start": 34.0091,
+      "end": 35.0293,
+      "score": 0.4123,
+      "nsyl": 3
+    },
+    {
+      "i": 61,
+      "text": "of",
+      "text_norm": "OF",
+      "punct_after": "",
+      "start": 35.0293,
+      "end": 35.1694,
+      "score": 0.7124,
+      "nsyl": 1
+    },
+    {
+      "i": 62,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 35.1694,
+      "end": 35.4495,
+      "score": 0.5329,
+      "nsyl": 1
+    },
+    {
+      "i": 63,
+      "text": "war",
+      "text_norm": "WAR",
+      "punct_after": ".",
+      "start": 35.4495,
+      "end": 37.2,
+      "score": 0.1032,
+      "nsyl": 1
+    },
+    {
+      "i": 64,
+      "text": "We",
+      "text_norm": "WE",
+      "punct_after": "",
+      "start": 37.2099,
+      "end": 37.37,
+      "score": 0.5351,
+      "nsyl": 1
+    },
+    {
+      "i": 65,
+      "text": "have",
+      "text_norm": "HAVE",
+      "punct_after": "",
+      "start": 37.37,
+      "end": 37.53,
+      "score": 0.764,
+      "nsyl": 1
+    },
+    {
+      "i": 66,
+      "text": "come",
+      "text_norm": "COME",
+      "punct_after": "",
+      "start": 37.53,
+      "end": 37.7501,
+      "score": 0.6263,
+      "nsyl": 1
+    },
+    {
+      "i": 67,
+      "text": "to",
+      "text_norm": "TO",
+      "punct_after": "",
+      "start": 37.7501,
+      "end": 37.8501,
+      "score": 0.7975,
+      "nsyl": 1
+    },
+    {
+      "i": 68,
+      "text": "dedicate",
+      "text_norm": "DEDICATE",
+      "punct_after": "",
+      "start": 37.8501,
+      "end": 38.4703,
+      "score": 0.4462,
+      "nsyl": 3
+    },
+    {
+      "i": 69,
+      "text": "a",
+      "text_norm": "A",
+      "punct_after": "",
+      "start": 38.4703,
+      "end": 38.5503,
+      "score": 0.5767,
+      "nsyl": 1
+    },
+    {
+      "i": 70,
+      "text": "portion",
+      "text_norm": "PORTION",
+      "punct_after": "",
+      "start": 38.5503,
+      "end": 39.1304,
+      "score": 0.4503,
+      "nsyl": 2
+    },
+    {
+      "i": 71,
+      "text": "of",
+      "text_norm": "OF",
+      "punct_after": "",
+      "start": 39.1304,
+      "end": 39.2705,
+      "score": 0.7025,
+      "nsyl": 1
+    },
+    {
+      "i": 72,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 39.2705,
+      "end": 39.5105,
+      "score": 0.5514,
+      "nsyl": 1
+    },
+    {
+      "i": 73,
+      "text": "field",
+      "text_norm": "FIELD",
+      "punct_after": ",",
+      "start": 39.5105,
+      "end": 40.4108,
+      "score": 0.2533,
+      "nsyl": 1
+    },
+    {
+      "i": 74,
+      "text": "as",
+      "text_norm": "AS",
+      "punct_after": "",
+      "start": 40.4108,
+      "end": 40.5708,
+      "score": 0.7485,
+      "nsyl": 1
+    },
+    {
+      "i": 75,
+      "text": "a",
+      "text_norm": "A",
+      "punct_after": "",
+      "start": 40.5708,
+      "end": 40.6708,
+      "score": 0.786,
+      "nsyl": 1
+    },
+    {
+      "i": 76,
+      "text": "final",
+      "text_norm": "FINAL",
+      "punct_after": "",
+      "start": 40.6708,
+      "end": 41.0309,
+      "score": 0.4682,
+      "nsyl": 2
+    },
+    {
+      "i": 77,
+      "text": "resting",
+      "text_norm": "RESTING",
+      "punct_after": "",
+      "start": 41.0309,
+      "end": 41.431,
+      "score": 0.5488,
+      "nsyl": 2
+    },
+    {
+      "i": 78,
+      "text": "place",
+      "text_norm": "PLACE",
+      "punct_after": "",
+      "start": 41.431,
+      "end": 42.05,
+      "score": 0.3165,
+      "nsyl": 1
+    },
+    {
+      "i": 79,
+      "text": "for",
+      "text_norm": "FOR",
+      "punct_after": "",
+      "start": 42.0512,
+      "end": 42.2313,
+      "score": 0.5372,
+      "nsyl": 1
+    },
+    {
+      "i": 80,
+      "text": "those",
+      "text_norm": "THOSE",
+      "punct_after": "",
+      "start": 42.2313,
+      "end": 42.9515,
+      "score": 0.3571,
+      "nsyl": 1
+    },
+    {
+      "i": 81,
+      "text": "who",
+      "text_norm": "WHO",
+      "punct_after": "",
+      "start": 42.9515,
+      "end": 43.2115,
+      "score": 0.5338,
+      "nsyl": 1
+    },
+    {
+      "i": 82,
+      "text": "here",
+      "text_norm": "HERE",
+      "punct_after": "",
+      "start": 43.2115,
+      "end": 43.9317,
+      "score": 0.2743,
+      "nsyl": 1
+    },
+    {
+      "i": 83,
+      "text": "gave",
+      "text_norm": "GAVE",
+      "punct_after": "",
+      "start": 43.9317,
+      "end": 44.2318,
+      "score": 0.4831,
+      "nsyl": 1
+    },
+    {
+      "i": 84,
+      "text": "their",
+      "text_norm": "THEIR",
+      "punct_after": "",
+      "start": 44.2318,
+      "end": 44.4519,
+      "score": 0.8639,
+      "nsyl": 1
+    },
+    {
+      "i": 85,
+      "text": "lives",
+      "text_norm": "LIVES",
+      "punct_after": "",
+      "start": 44.4519,
+      "end": 44.952,
+      "score": 0.4343,
+      "nsyl": 1
+    },
+    {
+      "i": 86,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 44.952,
+      "end": 45.5321,
+      "score": 0.2796,
+      "nsyl": 1
+    },
+    {
+      "i": 87,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 45.5321,
+      "end": 45.7922,
+      "score": 0.2153,
+      "nsyl": 1
+    },
+    {
+      "i": 88,
+      "text": "nation",
+      "text_norm": "NATION",
+      "punct_after": "",
+      "start": 45.7922,
+      "end": 46.3524,
+      "score": 0.4358,
+      "nsyl": 2
+    },
+    {
+      "i": 89,
+      "text": "might",
+      "text_norm": "MIGHT",
+      "punct_after": "",
+      "start": 46.3524,
+      "end": 46.6324,
+      "score": 0.658,
+      "nsyl": 1
+    },
+    {
+      "i": 90,
+      "text": "live",
+      "text_norm": "LIVE",
+      "punct_after": ".",
+      "start": 46.6324,
+      "end": 75.0,
+      "score": 0.1065,
+      "nsyl": 1
+    }
+  ],
+  "pauses": []
+}

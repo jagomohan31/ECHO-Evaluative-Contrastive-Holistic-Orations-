@@ -1,0 +1,74 @@
+[
+  {
+    "id": "speech-001_clean_L0",
+    "label": "Ideal Baseline (Level 0)",
+    "level": 0,
+    "family": "ideal",
+    "audio_url": "/demo/speech-001_clean_L0.flac",
+    "result_url": "/demo/speech-001_clean_L0.json"
+  },
+  {
+    "id": "speech-001_pace_fast_L1",
+    "label": "Fast Pacing (Level 1)",
+    "level": 1,
+    "family": "pace_fast",
+    "audio_url": "/demo/speech-001_pace_fast_L1.flac",
+    "result_url": "/demo/speech-001_pace_fast_L1.json"
+  },
+  {
+    "id": "speech-001_pace_fast_L2",
+    "label": "Fast Pacing (Level 2)",
+    "level": 2,
+    "family": "pace_fast",
+    "audio_url": "/demo/speech-001_pace_fast_L2.flac",
+    "result_url": "/demo/speech-001_pace_fast_L2.json"
+  },
+  {
+    "id": "speech-001_pace_fast_L3",
+    "label": "Fast Pacing (Level 3)",
+    "level": 3,
+    "family": "pace_fast",
+    "audio_url": "/demo/speech-001_pace_fast_L3.flac",
+    "result_url": "/demo/speech-001_pace_fast_L3.json"
+  },
+  {
+    "id": "speech-001_pace_slow_L1",
+    "label": "Slow Pacing (Level 1)",
+    "level": 1,
+    "family": "pace_slow",
+    "audio_url": "/demo/speech-001_pace_slow_L1.flac",
+    "result_url": "/demo/speech-001_pace_slow_L1.json"
+  },
+  {
+    "id": "speech-001_pace_slow_L2",
+    "label": "Slow Pacing (Level 2)",
+    "level": 2,
+    "family": "pace_slow",
+    "audio_url": "/demo/speech-001_pace_slow_L2.flac",
+    "result_url": "/demo/speech-001_pace_slow_L2.json"
+  },
+  {
+    "id": "speech-001_pace_slow_L3",
+    "label": "Slow Pacing (Level 3)",
+    "level": 3,
+    "family": "pace_slow",
+    "audio_url": "/demo/speech-001_pace_slow_L3.flac",
+    "result_url": "/demo/speech-001_pace_slow_L3.json"
+  },
+  {
+    "id": "speech-001_clipping_L2",
+    "label": "Audio Clipping (Level 2)",
+    "level": 2,
+    "family": "clipping",
+    "audio_url": "/demo/speech-001_clipping_L2.flac",
+    "result_url": "/demo/speech-001_clipping_L2.json"
+  },
+  {
+    "id": "speech-001_monotone_L2",
+    "label": "Monotone Pitch (Level 2)",
+    "level": 2,
+    "family": "monotone",
+    "audio_url": "/demo/speech-001_monotone_L2.flac",
+    "result_url": "/demo/speech-001_monotone_L2.json"
+  }
+]

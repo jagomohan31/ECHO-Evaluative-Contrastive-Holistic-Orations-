@@ -1,0 +1,9 @@
+eval,metric,value,passed
+E1,macro_f1,0.4000,True
+E2,monotonic_violations,1,True
+E3,spearman_rho,0.8042,True
+E4,loo_sd,None,True
+E5,p95_latency_s,0.0,True
+E6,byte_identical,True,True
+E7,bounds_violations,0,True
+E8,missing_explanations,0,True

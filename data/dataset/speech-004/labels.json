@@ -1,0 +1,1256 @@
+[
+  {
+    "file": "data\\library\\speech-004\\readers\\r1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 0,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": false,
+    "flaws": []
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pace_fast_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pace_fast",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "factor": 1.15
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pace_fast_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pace_fast",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "factor": 1.4
+        }
+      },
+      {
+        "family": "pace_fast",
+        "dimension": "pacing",
+        "word_idx": [
+          61,
+          98
+        ],
+        "start": 26.3275,
+        "end": 70.0,
+        "params": {
+          "factor": 1.4
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pace_fast_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pace_fast",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "factor": 1.7
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pace_slow_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pace_slow",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "factor": 0.85
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pace_slow_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pace_slow",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "factor": 0.7
+        }
+      },
+      {
+        "family": "pace_slow",
+        "dimension": "pacing",
+        "word_idx": [
+          61,
+          98
+        ],
+        "start": 26.3275,
+        "end": 70.0,
+        "params": {
+          "factor": 0.7
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pace_slow_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pace_slow",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "factor": 0.55
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pause_missing_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pause_missing",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "target_s": null,
+          "ratio": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pause_missing_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pause_missing",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          98
+        ],
+        "start": 0.08,
+        "end": 70.0,
+        "params": {
+          "target_s": 0.06,
+          "ratio": null
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pause_missing_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pause_missing",
+        "dimension": "pacing",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "target_s": 0.06,
+          "ratio": null
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_monotone_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "monotone",
+        "dimension": "intonation",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "alpha": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_monotone_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "monotone",
+        "dimension": "intonation",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "alpha": 0.35
+        }
+      },
+      {
+        "family": "monotone",
+        "dimension": "intonation",
+        "word_idx": [
+          61,
+          98
+        ],
+        "start": 26.3275,
+        "end": 70.0,
+        "params": {
+          "alpha": 0.35
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_monotone_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "monotone",
+        "dimension": "intonation",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "alpha": 0.1
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_terminal_contour_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          35,
+          35
+        ],
+        "start": 13.5239,
+        "end": 13.88,
+        "params": {
+          "rise_st": 2.5
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_terminal_contour_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          30,
+          30
+        ],
+        "start": 10.7431,
+        "end": 10.9431,
+        "params": {
+          "rise_st": 4.0
+        }
+      },
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          51,
+          51
+        ],
+        "start": 21.4661,
+        "end": 22.06,
+        "params": {
+          "rise_st": 4.0
+        }
+      },
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          77,
+          77
+        ],
+        "start": 43.3324,
+        "end": 45.0129,
+        "params": {
+          "rise_st": 4.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_terminal_contour_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 3.2209,
+        "end": 3.86,
+        "params": {
+          "rise_st": 6.0
+        }
+      },
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          30,
+          30
+        ],
+        "start": 10.7431,
+        "end": 10.9431,
+        "params": {
+          "rise_st": 6.0
+        }
+      },
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          44,
+          44
+        ],
+        "start": 18.2652,
+        "end": 18.8454,
+        "params": {
+          "rise_st": 6.0
+        }
+      },
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          60,
+          60
+        ],
+        "start": 25.7874,
+        "end": 26.3275,
+        "params": {
+          "rise_st": 6.0
+        }
+      },
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          77,
+          77
+        ],
+        "start": 43.3324,
+        "end": 45.0129,
+        "params": {
+          "rise_st": 6.0
+        }
+      },
+      {
+        "family": "terminal_contour",
+        "dimension": "intonation",
+        "word_idx": [
+          81,
+          81
+        ],
+        "start": 48.7939,
+        "end": 52.89,
+        "params": {
+          "rise_st": 6.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_stress_missed_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "stress_missed",
+        "dimension": "intonation",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "n_words": 1
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_stress_missed_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "stress_missed",
+        "dimension": "intonation",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "n_words": 3
+        }
+      },
+      {
+        "family": "stress_missed",
+        "dimension": "intonation",
+        "word_idx": [
+          61,
+          98
+        ],
+        "start": 26.3275,
+        "end": 70.0,
+        "params": {
+          "n_words": 3
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_stress_missed_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "stress_missed",
+        "dimension": "intonation",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "n_words": 6
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pause_excess_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          35,
+          35
+        ],
+        "start": 13.88,
+        "end": 14.33,
+        "params": {
+          "dur_s": 0.45
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pause_excess_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          30,
+          30
+        ],
+        "start": 10.9431,
+        "end": 11.7431,
+        "params": {
+          "dur_s": 0.8
+        }
+      },
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          30,
+          30
+        ],
+        "start": 22.06,
+        "end": 22.86,
+        "params": {
+          "dur_s": 0.8
+        }
+      },
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          30,
+          30
+        ],
+        "start": 45.0129,
+        "end": 45.8129,
+        "params": {
+          "dur_s": 0.8
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_pause_excess_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 3.86,
+        "end": 5.06,
+        "params": {
+          "dur_s": 1.2
+        }
+      },
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 10.9431,
+        "end": 12.143099999999999,
+        "params": {
+          "dur_s": 1.2
+        }
+      },
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 18.8454,
+        "end": 20.0454,
+        "params": {
+          "dur_s": 1.2
+        }
+      },
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 26.3275,
+        "end": 27.5275,
+        "params": {
+          "dur_s": 1.2
+        }
+      },
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 45.0129,
+        "end": 46.212900000000005,
+        "params": {
+          "dur_s": 1.2
+        }
+      },
+      {
+        "family": "pause_excess",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 52.89,
+        "end": 54.09,
+        "params": {
+          "dur_s": 1.2
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_hesitation_filled_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          35,
+          35
+        ],
+        "start": 13.88,
+        "end": 14.23,
+        "params": {
+          "dur_s": 0.35
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_hesitation_filled_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          30,
+          30
+        ],
+        "start": 10.9431,
+        "end": 11.393099999999999,
+        "params": {
+          "dur_s": 0.45
+        }
+      },
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          30,
+          30
+        ],
+        "start": 22.06,
+        "end": 22.509999999999998,
+        "params": {
+          "dur_s": 0.45
+        }
+      },
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          30,
+          30
+        ],
+        "start": 45.0129,
+        "end": 45.462900000000005,
+        "params": {
+          "dur_s": 0.45
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_hesitation_filled_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 3.86,
+        "end": 4.46,
+        "params": {
+          "dur_s": 0.6
+        }
+      },
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 10.9431,
+        "end": 11.543099999999999,
+        "params": {
+          "dur_s": 0.6
+        }
+      },
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 18.8454,
+        "end": 19.445400000000003,
+        "params": {
+          "dur_s": 0.6
+        }
+      },
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 26.3275,
+        "end": 26.927500000000002,
+        "params": {
+          "dur_s": 0.6
+        }
+      },
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 45.0129,
+        "end": 45.6129,
+        "params": {
+          "dur_s": 0.6
+        }
+      },
+      {
+        "family": "hesitation_filled",
+        "dimension": "fluency",
+        "word_idx": [
+          10,
+          10
+        ],
+        "start": 52.89,
+        "end": 53.49,
+        "params": {
+          "dur_s": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_volume_low_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "volume_low",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": -4.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_volume_low_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "volume_low",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": -8.0
+        }
+      },
+      {
+        "family": "volume_low",
+        "dimension": "volume",
+        "word_idx": [
+          61,
+          98
+        ],
+        "start": 26.3275,
+        "end": 70.0,
+        "params": {
+          "gain_db": -8.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_volume_low_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "volume_low",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": -14.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_clipping_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "clipping",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": 6.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_clipping_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "clipping",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": 10.0
+        }
+      },
+      {
+        "family": "clipping",
+        "dimension": "volume",
+        "word_idx": [
+          61,
+          98
+        ],
+        "start": 26.3275,
+        "end": 70.0,
+        "params": {
+          "gain_db": 10.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_clipping_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "clipping",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": 16.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_trailing_off_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "trailing_off",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": -6.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_trailing_off_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "trailing_off",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": -10.0
+        }
+      },
+      {
+        "family": "trailing_off",
+        "dimension": "volume",
+        "word_idx": [
+          61,
+          98
+        ],
+        "start": 26.3275,
+        "end": 70.0,
+        "params": {
+          "gain_db": -10.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_trailing_off_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "trailing_off",
+        "dimension": "volume",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "gain_db": -16.0
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_muffled_L1.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 1,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "muffled",
+        "dimension": "clarity",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "cutoff_hz": 5000
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_muffled_L2.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 2,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "muffled",
+        "dimension": "clarity",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "cutoff_hz": 3500
+        }
+      },
+      {
+        "family": "muffled",
+        "dimension": "clarity",
+        "word_idx": [
+          61,
+          98
+        ],
+        "start": 26.3275,
+        "end": 70.0,
+        "params": {
+          "cutoff_hz": 3500
+        }
+      }
+    ]
+  },
+  {
+    "file": "data\\dataset\\speech-004\\speech-004_r1_muffled_L3.flac",
+    "speech_id": "speech-004",
+    "reader_id": "r1",
+    "level": 3,
+    "split": "dev",
+    "leaky_baseline": true,
+    "synthetic_flaw": true,
+    "flaws": [
+      {
+        "family": "muffled",
+        "dimension": "clarity",
+        "word_idx": [
+          0,
+          60
+        ],
+        "start": 0.08,
+        "end": 26.3275,
+        "params": {
+          "cutoff_hz": 2500
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+node_modules/
+web/node_modules/
+web/.next/
+web/out/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+data/raw/
+dist/
+build/
+.git/
+.github/
+test-results/
+playwright-report/

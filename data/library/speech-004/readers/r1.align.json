@@ -1,0 +1,998 @@
+{
+  "model": "facebook/wav2vec2-base-960h",
+  "stride_s": 0.020006,
+  "duration_s": 70.0,
+  "words": [
+    {
+      "i": 0,
+      "text": "And",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 0.08,
+      "end": 0.16,
+      "score": 0.25,
+      "nsyl": 1
+    },
+    {
+      "i": 1,
+      "text": "by",
+      "text_norm": "BY",
+      "punct_after": "",
+      "start": 0.16,
+      "end": 0.2801,
+      "score": 0.4903,
+      "nsyl": 1
+    },
+    {
+      "i": 2,
+      "text": "virtue",
+      "text_norm": "VIRTUE",
+      "punct_after": "",
+      "start": 0.2801,
+      "end": 0.5201,
+      "score": 0.1666,
+      "nsyl": 2
+    },
+    {
+      "i": 3,
+      "text": "of",
+      "text_norm": "OF",
+      "punct_after": "",
+      "start": 0.5201,
+      "end": 0.6802,
+      "score": 0.3733,
+      "nsyl": 1
+    },
+    {
+      "i": 4,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 0.6802,
+      "end": 1.2203,
+      "score": 0.2755,
+      "nsyl": 1
+    },
+    {
+      "i": 5,
+      "text": "power",
+      "text_norm": "POWER",
+      "punct_after": "",
+      "start": 1.2203,
+      "end": 2.1206,
+      "score": 0.1328,
+      "nsyl": 2
+    },
+    {
+      "i": 6,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 2.1206,
+      "end": 2.4207,
+      "score": 0.3079,
+      "nsyl": 1
+    },
+    {
+      "i": 7,
+      "text": "for",
+      "text_norm": "FOR",
+      "punct_after": "",
+      "start": 2.4207,
+      "end": 2.52,
+      "score": 0.0,
+      "nsyl": 1
+    },
+    {
+      "i": 8,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 2.5207,
+      "end": 2.8608,
+      "score": 0.4008,
+      "nsyl": 1
+    },
+    {
+      "i": 9,
+      "text": "purpose",
+      "text_norm": "PURPOSE",
+      "punct_after": "",
+      "start": 2.8608,
+      "end": 3.22,
+      "score": 0.2156,
+      "nsyl": 2
+    },
+    {
+      "i": 10,
+      "text": "aforesaid",
+      "text_norm": "AFORESAID",
+      "punct_after": ",",
+      "start": 3.2209,
+      "end": 3.86,
+      "score": 0.282,
+      "nsyl": 3
+    },
+    {
+      "i": 11,
+      "text": "I",
+      "text_norm": "I",
+      "punct_after": "",
+      "start": 3.8611,
+      "end": 3.9,
+      "score": 0.0,
+      "nsyl": 1
+    },
+    {
+      "i": 12,
+      "text": "do",
+      "text_norm": "DO",
+      "punct_after": "",
+      "start": 3.9011,
+      "end": 3.9611,
+      "score": 0.0,
+      "nsyl": 1
+    },
+    {
+      "i": 13,
+      "text": "order",
+      "text_norm": "ORDER",
+      "punct_after": "",
+      "start": 3.9611,
+      "end": 4.3012,
+      "score": 0.3329,
+      "nsyl": 2
+    },
+    {
+      "i": 14,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 4.3012,
+      "end": 4.4213,
+      "score": 0.4792,
+      "nsyl": 1
+    },
+    {
+      "i": 15,
+      "text": "declare",
+      "text_norm": "DECLARE",
+      "punct_after": "",
+      "start": 4.4213,
+      "end": 4.84,
+      "score": 0.2557,
+      "nsyl": 2
+    },
+    {
+      "i": 16,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 4.8414,
+      "end": 5.5216,
+      "score": 0.1214,
+      "nsyl": 1
+    },
+    {
+      "i": 17,
+      "text": "all",
+      "text_norm": "ALL",
+      "punct_after": "",
+      "start": 5.5216,
+      "end": 5.8017,
+      "score": 0.3431,
+      "nsyl": 1
+    },
+    {
+      "i": 18,
+      "text": "persons",
+      "text_norm": "PERSONS",
+      "punct_after": "",
+      "start": 5.8017,
+      "end": 6.4819,
+      "score": 0.2778,
+      "nsyl": 2
+    },
+    {
+      "i": 19,
+      "text": "held",
+      "text_norm": "HELD",
+      "punct_after": "",
+      "start": 6.4819,
+      "end": 6.7819,
+      "score": 0.3998,
+      "nsyl": 1
+    },
+    {
+      "i": 20,
+      "text": "as",
+      "text_norm": "AS",
+      "punct_after": "",
+      "start": 6.7819,
+      "end": 7.002,
+      "score": 0.214,
+      "nsyl": 1
+    },
+    {
+      "i": 21,
+      "text": "slaves",
+      "text_norm": "SLAVES",
+      "punct_after": "",
+      "start": 7.002,
+      "end": 7.7622,
+      "score": 0.1696,
+      "nsyl": 1
+    },
+    {
+      "i": 22,
+      "text": "within",
+      "text_norm": "WITHIN",
+      "punct_after": "",
+      "start": 7.7622,
+      "end": 8.2223,
+      "score": 0.181,
+      "nsyl": 2
+    },
+    {
+      "i": 23,
+      "text": "said",
+      "text_norm": "SAID",
+      "punct_after": "",
+      "start": 8.2223,
+      "end": 8.5825,
+      "score": 0.3884,
+      "nsyl": 1
+    },
+    {
+      "i": 24,
+      "text": "designated",
+      "text_norm": "DESIGNATED",
+      "punct_after": "",
+      "start": 8.5825,
+      "end": 9.1026,
+      "score": 0.4494,
+      "nsyl": 4
+    },
+    {
+      "i": 25,
+      "text": "States",
+      "text_norm": "STATES",
+      "punct_after": "",
+      "start": 9.1026,
+      "end": 9.5427,
+      "score": 0.5917,
+      "nsyl": 1
+    },
+    {
+      "i": 26,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 9.5427,
+      "end": 10.14,
+      "score": 0.0,
+      "nsyl": 1
+    },
+    {
+      "i": 27,
+      "text": "parts",
+      "text_norm": "PARTS",
+      "punct_after": "",
+      "start": 10.1429,
+      "end": 10.32,
+      "score": 0.0,
+      "nsyl": 1
+    },
+    {
+      "i": 28,
+      "text": "of",
+      "text_norm": "OF",
+      "punct_after": "",
+      "start": 10.3229,
+      "end": 10.423,
+      "score": 0.0,
+      "nsyl": 1
+    },
+    {
+      "i": 29,
+      "text": "States",
+      "text_norm": "STATES",
+      "punct_after": "",
+      "start": 10.423,
+      "end": 10.7431,
+      "score": 0.3724,
+      "nsyl": 1
+    },
+    {
+      "i": 30,
+      "text": "are",
+      "text_norm": "ARE",
+      "punct_after": ",",
+      "start": 10.7431,
+      "end": 10.9431,
+      "score": 0.3997,
+      "nsyl": 1
+    },
+    {
+      "i": 31,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 10.9431,
+      "end": 11.7834,
+      "score": 0.1442,
+      "nsyl": 1
+    },
+    {
+      "i": 32,
+      "text": "henceforward",
+      "text_norm": "HENCEFORWARD",
+      "punct_after": "",
+      "start": 11.7834,
+      "end": 12.62,
+      "score": 0.4882,
+      "nsyl": 4
+    },
+    {
+      "i": 33,
+      "text": "shall",
+      "text_norm": "SHALL",
+      "punct_after": "",
+      "start": 12.6236,
+      "end": 13.2638,
+      "score": 0.1157,
+      "nsyl": 1
+    },
+    {
+      "i": 34,
+      "text": "be",
+      "text_norm": "BE",
+      "punct_after": ",",
+      "start": 13.2638,
+      "end": 13.5239,
+      "score": 0.3145,
+      "nsyl": 1
+    },
+    {
+      "i": 35,
+      "text": "free",
+      "text_norm": "FREE",
+      "punct_after": ";",
+      "start": 13.5239,
+      "end": 13.88,
+      "score": 0.5609,
+      "nsyl": 1
+    },
+    {
+      "i": 36,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 13.884,
+      "end": 16.18,
+      "score": 0.0,
+      "nsyl": 1
+    },
+    {
+      "i": 37,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": "",
+      "start": 16.1846,
+      "end": 16.4447,
+      "score": 0.2295,
+      "nsyl": 1
+    },
+    {
+      "i": 38,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 16.4447,
+      "end": 16.5847,
+      "score": 0.9008,
+      "nsyl": 1
+    },
+    {
+      "i": 39,
+      "text": "Executive",
+      "text_norm": "EXECUTIVE",
+      "punct_after": "",
+      "start": 16.5847,
+      "end": 17.1849,
+      "score": 0.4616,
+      "nsyl": 4
+    },
+    {
+      "i": 40,
+      "text": "Government",
+      "text_norm": "GOVERNMENT",
+      "punct_after": "",
+      "start": 17.1849,
+      "end": 17.6851,
+      "score": 0.6467,
+      "nsyl": 3
+    },
+    {
+      "i": 41,
+      "text": "of",
+      "text_norm": "OF",
+      "punct_after": "",
+      "start": 17.6851,
+      "end": 17.7651,
+      "score": 0.9365,
+      "nsyl": 1
+    },
+    {
+      "i": 42,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 17.7651,
+      "end": 17.8651,
+      "score": 0.9564,
+      "nsyl": 1
+    },
+    {
+      "i": 43,
+      "text": "United",
+      "text_norm": "UNITED",
+      "punct_after": "",
+      "start": 17.8651,
+      "end": 18.2652,
+      "score": 0.6452,
+      "nsyl": 3
+    },
+    {
+      "i": 44,
+      "text": "States",
+      "text_norm": "STATES",
+      "punct_after": ",",
+      "start": 18.2652,
+      "end": 18.8454,
+      "score": 0.5335,
+      "nsyl": 1
+    },
+    {
+      "i": 45,
+      "text": "including",
+      "text_norm": "INCLUDING",
+      "punct_after": "",
+      "start": 18.8454,
+      "end": 19.3455,
+      "score": 0.6122,
+      "nsyl": 3
+    },
+    {
+      "i": 46,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 19.3455,
+      "end": 19.4856,
+      "score": 0.8555,
+      "nsyl": 1
+    },
+    {
+      "i": 47,
+      "text": "military",
+      "text_norm": "MILITARY",
+      "punct_after": "",
+      "start": 19.4856,
+      "end": 20.2458,
+      "score": 0.4712,
+      "nsyl": 4
+    },
+    {
+      "i": 48,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 20.2458,
+      "end": 20.4058,
+      "score": 0.7431,
+      "nsyl": 1
+    },
+    {
+      "i": 49,
+      "text": "naval",
+      "text_norm": "NAVAL",
+      "punct_after": "",
+      "start": 20.4058,
+      "end": 20.906,
+      "score": 0.3572,
+      "nsyl": 2
+    },
+    {
+      "i": 50,
+      "text": "authorities",
+      "text_norm": "AUTHORITIES",
+      "punct_after": "",
+      "start": 20.906,
+      "end": 21.4661,
+      "score": 0.5132,
+      "nsyl": 4
+    },
+    {
+      "i": 51,
+      "text": "thereof",
+      "text_norm": "THEREOF",
+      "punct_after": ",",
+      "start": 21.4661,
+      "end": 22.06,
+      "score": 0.5103,
+      "nsyl": 2
+    },
+    {
+      "i": 52,
+      "text": "will",
+      "text_norm": "WILL",
+      "punct_after": "",
+      "start": 22.0663,
+      "end": 23.1266,
+      "score": 0.1338,
+      "nsyl": 1
+    },
+    {
+      "i": 53,
+      "text": "recognize",
+      "text_norm": "RECOGNIZE",
+      "punct_after": "",
+      "start": 23.1266,
+      "end": 23.9869,
+      "score": 0.4205,
+      "nsyl": 3
+    },
+    {
+      "i": 54,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 23.9869,
+      "end": 24.1469,
+      "score": 0.7187,
+      "nsyl": 1
+    },
+    {
+      "i": 55,
+      "text": "maintain",
+      "text_norm": "MAINTAIN",
+      "punct_after": "",
+      "start": 24.1469,
+      "end": 24.7871,
+      "score": 0.5294,
+      "nsyl": 2
+    },
+    {
+      "i": 56,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 24.7871,
+      "end": 24.9271,
+      "score": 0.8231,
+      "nsyl": 1
+    },
+    {
+      "i": 57,
+      "text": "freedom",
+      "text_norm": "FREEDOM",
+      "punct_after": "",
+      "start": 24.9271,
+      "end": 25.3072,
+      "score": 0.6866,
+      "nsyl": 2
+    },
+    {
+      "i": 58,
+      "text": "of",
+      "text_norm": "OF",
+      "punct_after": "",
+      "start": 25.3072,
+      "end": 25.4473,
+      "score": 0.7181,
+      "nsyl": 1
+    },
+    {
+      "i": 59,
+      "text": "said",
+      "text_norm": "SAID",
+      "punct_after": "",
+      "start": 25.4473,
+      "end": 25.78,
+      "score": 0.2301,
+      "nsyl": 1
+    },
+    {
+      "i": 60,
+      "text": "persons",
+      "text_norm": "PERSONS",
+      "punct_after": ".",
+      "start": 25.7874,
+      "end": 26.3275,
+      "score": 0.4438,
+      "nsyl": 2
+    },
+    {
+      "i": 61,
+      "text": "And",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 26.3275,
+      "end": 28.9683,
+      "score": 0.1228,
+      "nsyl": 1
+    },
+    {
+      "i": 62,
+      "text": "I",
+      "text_norm": "I",
+      "punct_after": "",
+      "start": 28.9683,
+      "end": 29.8685,
+      "score": 0.1072,
+      "nsyl": 1
+    },
+    {
+      "i": 63,
+      "text": "hereby",
+      "text_norm": "HEREBY",
+      "punct_after": "",
+      "start": 29.8685,
+      "end": 30.86,
+      "score": 0.2018,
+      "nsyl": 2
+    },
+    {
+      "i": 64,
+      "text": "enjoin",
+      "text_norm": "ENJOIN",
+      "punct_after": "",
+      "start": 30.8688,
+      "end": 31.369,
+      "score": 0.2282,
+      "nsyl": 2
+    },
+    {
+      "i": 65,
+      "text": "upon",
+      "text_norm": "UPON",
+      "punct_after": "",
+      "start": 31.369,
+      "end": 32.2492,
+      "score": 0.2014,
+      "nsyl": 2
+    },
+    {
+      "i": 66,
+      "text": "the",
+      "text_norm": "THE",
+      "punct_after": "",
+      "start": 32.2492,
+      "end": 33.16,
+      "score": 0.2648,
+      "nsyl": 1
+    },
+    {
+      "i": 67,
+      "text": "people",
+      "text_norm": "PEOPLE",
+      "punct_after": "",
+      "start": 33.1695,
+      "end": 34.7099,
+      "score": 0.1589,
+      "nsyl": 2
+    },
+    {
+      "i": 68,
+      "text": "so",
+      "text_norm": "SO",
+      "punct_after": "",
+      "start": 34.7099,
+      "end": 35.11,
+      "score": 0.2471,
+      "nsyl": 1
+    },
+    {
+      "i": 69,
+      "text": "declared",
+      "text_norm": "DECLARED",
+      "punct_after": "",
+      "start": 35.11,
+      "end": 36.01,
+      "score": 0.2513,
+      "nsyl": 2
+    },
+    {
+      "i": 70,
+      "text": "to",
+      "text_norm": "TO",
+      "punct_after": "",
+      "start": 36.0103,
+      "end": 38.1309,
+      "score": 0.0752,
+      "nsyl": 1
+    },
+    {
+      "i": 71,
+      "text": "be",
+      "text_norm": "BE",
+      "punct_after": "",
+      "start": 38.1309,
+      "end": 39.3312,
+      "score": 0.1862,
+      "nsyl": 1
+    },
+    {
+      "i": 72,
+      "text": "free",
+      "text_norm": "FREE",
+      "punct_after": "",
+      "start": 39.3312,
+      "end": 39.6913,
+      "score": 0.2932,
+      "nsyl": 1
+    },
+    {
+      "i": 73,
+      "text": "to",
+      "text_norm": "TO",
+      "punct_after": "",
+      "start": 39.6913,
+      "end": 40.3515,
+      "score": 0.2253,
+      "nsyl": 1
+    },
+    {
+      "i": 74,
+      "text": "abstain",
+      "text_norm": "ABSTAIN",
+      "punct_after": "",
+      "start": 40.3515,
+      "end": 42.7122,
+      "score": 0.1215,
+      "nsyl": 2
+    },
+    {
+      "i": 75,
+      "text": "from",
+      "text_norm": "FROM",
+      "punct_after": "",
+      "start": 42.7122,
+      "end": 43.2123,
+      "score": 0.2215,
+      "nsyl": 1
+    },
+    {
+      "i": 76,
+      "text": "all",
+      "text_norm": "ALL",
+      "punct_after": "",
+      "start": 43.2123,
+      "end": 43.3324,
+      "score": 0.2535,
+      "nsyl": 1
+    },
+    {
+      "i": 77,
+      "text": "violence",
+      "text_norm": "VIOLENCE",
+      "punct_after": ",",
+      "start": 43.3324,
+      "end": 45.0129,
+      "score": 0.1761,
+      "nsyl": 3
+    },
+    {
+      "i": 78,
+      "text": "unless",
+      "text_norm": "UNLESS",
+      "punct_after": "",
+      "start": 45.0129,
+      "end": 45.513,
+      "score": 0.272,
+      "nsyl": 2
+    },
+    {
+      "i": 79,
+      "text": "in",
+      "text_norm": "IN",
+      "punct_after": "",
+      "start": 45.513,
+      "end": 46.6333,
+      "score": 0.1879,
+      "nsyl": 1
+    },
+    {
+      "i": 80,
+      "text": "necessary",
+      "text_norm": "NECESSARY",
+      "punct_after": "",
+      "start": 46.6333,
+      "end": 48.7939,
+      "score": 0.1669,
+      "nsyl": 4
+    },
+    {
+      "i": 81,
+      "text": "self-defense",
+      "text_norm": "SELF DEFENSE",
+      "punct_after": ";",
+      "start": 48.7939,
+      "end": 52.89,
+      "score": 0.1653,
+      "nsyl": 3
+    },
+    {
+      "i": 82,
+      "text": "and",
+      "text_norm": "AND",
+      "punct_after": "",
+      "start": 52.8951,
+      "end": 53.6353,
+      "score": 0.2692,
+      "nsyl": 1
+    },
+    {
+      "i": 83,
+      "text": "I",
+      "text_norm": "I",
+      "punct_after": "",
+      "start": 53.6353,
+      "end": 53.9554,
+      "score": 0.3204,
+      "nsyl": 1
+    },
+    {
+      "i": 84,
+      "text": "recommend",
+      "text_norm": "RECOMMEND",
+      "punct_after": "",
+      "start": 53.9554,
+      "end": 56.51,
+      "score": 0.1217,
+      "nsyl": 3
+    },
+    {
+      "i": 85,
+      "text": "to",
+      "text_norm": "TO",
+      "punct_after": "",
+      "start": 56.5161,
+      "end": 57.9766,
+      "score": 0.1865,
+      "nsyl": 1
+    },
+    {
+      "i": 86,
+      "text": "them",
+      "text_norm": "THEM",
+      "punct_after": "",
+      "start": 57.9766,
+      "end": 59.437,
+      "score": 0.203,
+      "nsyl": 1
+    },
+    {
+      "i": 87,
+      "text": "that",
+      "text_norm": "THAT",
+      "punct_after": ",",
+      "start": 59.437,
+      "end": 60.2372,
+      "score": 0.3473,
+      "nsyl": 1
+    },
+    {
+      "i": 88,
+      "text": "in",
+      "text_norm": "IN",
+      "punct_after": "",
+      "start": 60.2372,
+      "end": 60.6373,
+      "score": 0.3826,
+      "nsyl": 1
+    },
+    {
+      "i": 89,
+      "text": "all",
+      "text_norm": "ALL",
+      "punct_after": "",
+      "start": 60.6373,
+      "end": 62.1378,
+      "score": 0.1653,
+      "nsyl": 1
+    },
+    {
+      "i": 90,
+      "text": "cases",
+      "text_norm": "CASES",
+      "punct_after": "",
+      "start": 62.1378,
+      "end": 62.978,
+      "score": 0.2871,
+      "nsyl": 2
+    },
+    {
+      "i": 91,
+      "text": "when",
+      "text_norm": "WHEN",
+      "punct_after": "",
+      "start": 62.978,
+      "end": 64.37,
+      "score": 0.1942,
+      "nsyl": 1
+    },
+    {
+      "i": 92,
+      "text": "allowed",
+      "text_norm": "ALLOWED",
+      "punct_after": ",",
+      "start": 64.3784,
+      "end": 65.3187,
+      "score": 0.1291,
+      "nsyl": 2
+    },
+    {
+      "i": 93,
+      "text": "they",
+      "text_norm": "THEY",
+      "punct_after": "",
+      "start": 65.3187,
+      "end": 66.519,
+      "score": 0.1702,
+      "nsyl": 1
+    },
+    {
+      "i": 94,
+      "text": "labor",
+      "text_norm": "LABOR",
+      "punct_after": "",
+      "start": 66.519,
+      "end": 67.1192,
+      "score": 0.1959,
+      "nsyl": 2
+    },
+    {
+      "i": 95,
+      "text": "faithfully",
+      "text_norm": "FAITHFULLY",
+      "punct_after": "",
+      "start": 67.1192,
+      "end": 68.2195,
+      "score": 0.0874,
+      "nsyl": 3
+    },
+    {
+      "i": 96,
+      "text": "for",
+      "text_norm": "FOR",
+      "punct_after": "",
+      "start": 68.2195,
+      "end": 68.8797,
+      "score": 0.3434,
+      "nsyl": 1
+    },
+    {
+      "i": 97,
+      "text": "reasonable",
+      "text_norm": "REASONABLE",
+      "punct_after": "",
+      "start": 68.8797,
+      "end": 69.4999,
+      "score": 0.286,
+      "nsyl": 4
+    },
+    {
+      "i": 98,
+      "text": "wages",
+      "text_norm": "WAGES",
+      "punct_after": ".",
+      "start": 69.4999,
+      "end": 70.0,
+      "score": 0.3164,
+      "nsyl": 2
+    }
+  ],
+  "pauses": []
+}

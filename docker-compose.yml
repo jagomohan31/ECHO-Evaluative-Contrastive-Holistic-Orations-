@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  speechlens:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: speechlens:latest
+    container_name: speechlens
+    ports:
+      - "7860:7860"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 30s

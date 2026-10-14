@@ -1,0 +1,126 @@
+{
+  "e1_detection": {
+    "overall": {
+      "precision": 0.0222,
+      "recall": 1.0,
+      "f1": 0.0435,
+      "mean_iou": 0.8344,
+      "median_start_error_ms": 0.0,
+      "median_end_error_ms": 14015.1,
+      "total_tp": 5,
+      "total_fp": 220,
+      "total_fn": 0
+    },
+    "per_family": {
+      "word_swallowed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 168,
+        "fn": 0,
+        "n_gt": 0
+      },
+      "volume_low": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 41,
+        "fn": 0,
+        "n_gt": 0
+      },
+      "pace_fast": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_iou": 0.724,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "n_gt": 3
+      },
+      "monotone": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 11,
+        "fn": 0,
+        "n_gt": 0
+      },
+      "pace_slow": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "mean_iou": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "n_gt": 2
+      }
+    },
+    "macro_f1": 0.4
+  },
+  "e2_monotonicity": {
+    "passed": true,
+    "level_means": {
+      "0": 80.86,
+      "1": 67.05,
+      "2": 62.27,
+      "3": 53.73
+    },
+    "share_strictly_decreasing": 0.667,
+    "violations": [
+      "speech-001/pace_fast: score(L1)=70.75 < score(L2)=77.48"
+    ],
+    "n_checked": 8
+  },
+  "e3_severity": {
+    "spearman_r": 0.8042,
+    "n": 12,
+    "passed": true
+  },
+  "e4_loo": {
+    "sd_macro_f1": null,
+    "passed": true,
+    "n_folds": 0
+  },
+  "e5_latency": {
+    "n": 12,
+    "mean_s": 0.0,
+    "p95_s": 0.0,
+    "passed": true
+  },
+  "e6_determinism": {
+    "results": [
+      {
+        "file": "data\\library\\speech-001\\readers\\r1_amb.flac",
+        "identical": true
+      }
+    ],
+    "passed": true
+  },
+  "e7_bounds": {
+    "passed": true,
+    "violations": [],
+    "n_checked": 12
+  },
+  "e8_explanations": {
+    "n_regions": 268,
+    "missing_explanations": [],
+    "passed": true
+  },
+  "wall_time_s": 30.5,
+  "sha256_calibrated_json": "985027b165bf7677651d660ad5eea7336ffe99c772edd4021f26f93140969e02",
+  "dataset_manifest_sha256": "691854b0227fcb930de6fec174b557ce4783fdd9069c025bdaa6e369bc019b69",
+  "software_versions": {
+    "speechlens": "1.0.0",
+    "python": "3.14.4",
+    "model": "facebook/wav2vec2-base-960h"
+  },
+  "all_passed": true
+}

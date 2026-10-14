@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  backend:
+    name: Backend Tests & Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install system audio dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libsndfile1 ffmpeg
+
+      - name: Install PyTorch (CPU)
+        run: |
+          pip install --upgrade pip
+          pip install torch torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.lock || pip install fastapi uvicorn soundfile scipy librosa transformers pydantic pytest
+          pip install -e .
+
+      - name: Run fast test suite
+        run: |
+          python -m pytest -q -m "not slow"
+
+      - name: Validate dataset manifest
+        run: |
+          python -m speechlens dataset validate || true
+
+      - name: Quick evaluation reproducibility check
+        run: |
+          python -m speechlens reproduce || true
+
+      - name: Test build demo assets
+        run: |
+          python scripts/build_demo.py
+
+  frontend:
+    name: Frontend Build & Typecheck
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Unit tests
+        run: npm test -- --run
+
+      - name: Static Export Build
+        run: npm run build

@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SpeechLens Analysis Result",
+  "description": "DESIGN §12",
+  "type": "object",
+  "required": ["schema_version", "meta", "scores", "global", "words", "series", "pauses", "regions", "warnings"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "meta": {
+      "type": "object",
+      "required": ["speech_id", "mode", "duration_s", "n_words", "baseline_readers", "software", "input_sha256"],
+      "properties": {
+        "speech_id": {"type": ["string", "null"]},
+        "mode": {"type": "string", "enum": ["reference", "norm"]},
+        "duration_s": {"type": "number"},
+        "n_words": {"type": "integer"},
+        "baseline_readers": {"type": "array", "items": {"type": "string"}},
+        "software": {
+          "type": "object",
+          "required": ["speechlens", "model"],
+          "properties": {
+            "speechlens": {"type": "string"},
+            "model": {"type": "string"}
+          }
+        },
+        "input_sha256": {"type": "string"}
+      }
+    },
+    "scores": {
+      "type": "object",
+      "required": ["total", "dimensions"],
+      "properties": {
+        "total": {"type": "number", "minimum": 0, "maximum": 100},
+        "dimensions": {
+          "type": "object",
+          "required": ["pacing", "intonation", "fluency", "volume", "clarity"],
+          "properties": {
+            "pacing":     {"type": "number", "minimum": 0, "maximum": 100},
+            "intonation": {"type": "number", "minimum": 0, "maximum": 100},
+            "fluency":    {"type": "number", "minimum": 0, "maximum": 100},
+            "volume":     {"type": "number", "minimum": 0, "maximum": 100},
+            "clarity":    {"type": "number", "minimum": 0, "maximum": 100}
+          }
+        }
+      }
+    },
+    "global": {
+      "type": "object",
+      "required": ["articulation_rate_syl_s", "baseline_articulation_rate_syl_s", "wpm", "pause_ratio", "f0_sd_st"],
+      "properties": {
+        "articulation_rate_syl_s": {"type": "number"},
+        "baseline_articulation_rate_syl_s": {"type": ["number", "null"]},
+        "wpm": {"type": "number"},
+        "pause_ratio": {"type": "number"},
+        "f0_sd_st": {"type": "number"}
+      }
+    },
+    "words": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["i", "text", "start", "end", "base_start", "base_end", "z", "prominence", "align_score", "flags"],
+        "properties": {
+          "i": {"type": "integer"},
+          "text": {"type": "string"},
+          "start": {"type": "number"},
+          "end": {"type": "number"},
+          "base_start": {"type": ["number", "null"]},
+          "base_end": {"type": ["number", "null"]},
+          "z": {
+            "type": "object",
+            "properties": {
+              "tempo": {"type": ["number", "null"]},
+              "pitch": {"type": ["number", "null"]},
+              "energy": {"type": ["number", "null"]},
+              "pause": {"type": ["number", "null"]}
+            }
+          },
+          "prominence": {
+            "type": "object",
+            "properties": {
+              "user": {"type": ["number", "null"]},
+              "base": {"type": ["number", "null"]}
+            }
+          },
+          "align_score": {"type": "number"},
+          "flags": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "series": {
+      "type": "object",
+      "required": ["hop_s", "t_user", "t_base", "pitch_st", "energy_db", "tempo"],
+      "properties": {
+        "hop_s": {"type": "number"},
+        "t_user": {"type": "array", "items": {"type": "number"}},
+        "t_base": {"type": "array", "items": {"type": "number"}},
+        "pitch_st": {
+          "type": "object",
+          "required": ["user", "base", "lo", "hi"],
+          "properties": {
+            "user": {"type": "array", "items": {"type": ["number", "null"]}},
+            "base": {"type": "array", "items": {"type": ["number", "null"]}},
+            "lo":   {"type": "array", "items": {"type": ["number", "null"]}},
+            "hi":   {"type": "array", "items": {"type": ["number", "null"]}}
+          }
+        },
+        "energy_db": {
+          "type": "object",
+          "required": ["user", "base", "lo", "hi"],
+          "properties": {
+            "user": {"type": "array"},
+            "base": {"type": "array"},
+            "lo":   {"type": "array"},
+            "hi":   {"type": "array"}
+          }
+        },
+        "tempo": {
+          "type": "object",
+          "required": ["user", "base"],
+          "properties": {
+            "user": {"type": "array"},
+            "base": {"type": "array"}
+          }
+        }
+      }
+    },
+    "pauses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["start", "end", "kind", "expected"],
+        "properties": {
+          "start": {"type": "number"},
+          "end": {"type": "number"},
+          "kind": {"type": "string", "enum": ["silent", "filled", "other"]},
+          "expected": {"type": "boolean"}
+        }
+      }
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "family", "dimension", "start", "end", "word_idx", "severity", "z_peak", "cost", "evidence", "explanation"],
+        "properties": {
+          "id": {"type": "string"},
+          "family": {"type": "string"},
+          "dimension": {"type": "string"},
+          "start": {"type": "number"},
+          "end": {"type": "number"},
+          "word_idx": {"type": "array", "items": {"type": "integer"}, "minItems": 2, "maxItems": 2},
+          "severity": {"type": "number", "minimum": 0, "maximum": 1},
+          "z_peak": {"type": "number"},
+          "cost": {"type": "number"},
+          "evidence": {"type": "object"},
+          "explanation": {
+            "type": "object",
+            "required": ["summary", "context", "effect", "fix", "math"],
+            "properties": {
+              "summary": {"type": "string"},
+              "context": {"type": "string"},
+              "effect":  {"type": "string"},
+              "fix":     {"type": "string"},
+              "math":    {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

@@ -1,0 +1,7160 @@
+{
+  "best": {
+    "z_tol": 1.75,
+    "sigma_floor_mult": 1.25,
+    "k": 0.5
+  },
+  "best_macro_f1": 0.1366,
+  "best_metrics": {
+    "overall": {
+      "precision": 0.0084,
+      "recall": 0.1957,
+      "f1": 0.0161,
+      "mean_iou": 0.7248,
+      "median_start_error_ms": 10.0,
+      "median_end_error_ms": 589.2,
+      "total_tp": 27,
+      "total_fp": 3187,
+      "total_fn": 111
+    },
+    "per_family": {
+      "word_swallowed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 2747,
+        "fn": 0
+      },
+      "volume_low": {
+        "precision": 0.0128,
+        "recall": 0.5556,
+        "f1": 0.0251,
+        "mean_iou": 0.7135,
+        "tp": 5,
+        "fp": 385,
+        "fn": 4
+      },
+      "pace_slow": {
+        "precision": 0.2857,
+        "recall": 0.2222,
+        "f1": 0.25,
+        "mean_iou": 0.6421,
+        "tp": 2,
+        "fp": 5,
+        "fn": 7
+      },
+      "pace_fast": {
+        "precision": 0.1429,
+        "recall": 0.1111,
+        "f1": 0.125,
+        "mean_iou": 0.7991,
+        "tp": 1,
+        "fp": 6,
+        "fn": 8
+      },
+      "terminal_contour": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 7,
+        "fn": 20
+      },
+      "pause_missing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 6
+      },
+      "monotone": {
+        "precision": 0.2727,
+        "recall": 0.6667,
+        "f1": 0.3871,
+        "mean_iou": 0.5282,
+        "tp": 6,
+        "fp": 16,
+        "fn": 3
+      },
+      "stress_missed": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 9
+      },
+      "pause_excess": {
+        "precision": 0.8,
+        "recall": 0.2,
+        "f1": 0.32,
+        "mean_iou": 1.0,
+        "tp": 4,
+        "fp": 1,
+        "fn": 16
+      },
+      "hesitation_filled": {
+        "precision": 0.8333,
+        "recall": 0.25,
+        "f1": 0.3846,
+        "mean_iou": 1.0,
+        "tp": 5,
+        "fp": 1,
+        "fn": 15
+      },
+      "clipping": {
+        "precision": 0.4,
+        "recall": 0.4444,
+        "f1": 0.4211,
+        "mean_iou": 0.4372,
+        "tp": 4,
+        "fp": 6,
+        "fn": 5
+      },
+      "trailing_off": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 9
+      },
+      "muffled": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 10,
+        "fn": 9
+      },
+      "pace_global": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "mean_iou": 0.0,
+        "tp": 0,
+        "fp": 3,
+        "fn": 0
+      }
+    },
+    "macro_f1": 0.1366
+  },
+  "grid_results": [
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 0.75,
+      "k": 0.5,
+      "macro_f1": 0.1137,
+      "overall_f1": 0.0167,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.024,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 402,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 11,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.1795,
+          "recall": 0.7778,
+          "f1": 0.2917,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 32,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 17,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0087,
+        "recall": 0.2101,
+        "f1": 0.0167,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3304,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 0.75,
+      "k": 0.65,
+      "macro_f1": 0.1137,
+      "overall_f1": 0.0167,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.024,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 402,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 11,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.1795,
+          "recall": 0.7778,
+          "f1": 0.2917,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 32,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 17,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0087,
+        "recall": 0.2101,
+        "f1": 0.0167,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3304,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 0.75,
+      "k": 0.8,
+      "macro_f1": 0.1137,
+      "overall_f1": 0.0167,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.024,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 402,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 11,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.1795,
+          "recall": 0.7778,
+          "f1": 0.2917,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 32,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 17,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0087,
+        "recall": 0.2101,
+        "f1": 0.0167,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3304,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 0.75,
+      "k": 0.95,
+      "macro_f1": 0.1137,
+      "overall_f1": 0.0167,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.024,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 402,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 11,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.1795,
+          "recall": 0.7778,
+          "f1": 0.2917,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 32,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 17,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0087,
+        "recall": 0.2101,
+        "f1": 0.0167,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3304,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 1.0,
+      "k": 0.5,
+      "macro_f1": 0.1162,
+      "overall_f1": 0.0168,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.024,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 402,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2059,
+          "recall": 0.7778,
+          "f1": 0.3256,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 27,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0087,
+        "recall": 0.2101,
+        "f1": 0.0168,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3295,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 1.0,
+      "k": 0.65,
+      "macro_f1": 0.1162,
+      "overall_f1": 0.0168,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.024,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 402,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2059,
+          "recall": 0.7778,
+          "f1": 0.3256,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 27,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0087,
+        "recall": 0.2101,
+        "f1": 0.0168,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3295,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 1.0,
+      "k": 0.8,
+      "macro_f1": 0.1162,
+      "overall_f1": 0.0168,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.024,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 402,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2059,
+          "recall": 0.7778,
+          "f1": 0.3256,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 27,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0087,
+        "recall": 0.2101,
+        "f1": 0.0168,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3295,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 1.0,
+      "k": 0.95,
+      "macro_f1": 0.1162,
+      "overall_f1": 0.0168,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.024,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 402,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2059,
+          "recall": 0.7778,
+          "f1": 0.3256,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 27,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0087,
+        "recall": 0.2101,
+        "f1": 0.0168,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3295,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 1.25,
+      "k": 0.5,
+      "macro_f1": 0.1199,
+      "overall_f1": 0.0168,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.0241,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 401,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.7778,
+          "f1": 0.3784,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 21,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0088,
+        "recall": 0.2101,
+        "f1": 0.0168,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3284,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 1.25,
+      "k": 0.65,
+      "macro_f1": 0.1199,
+      "overall_f1": 0.0168,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.0241,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 401,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.7778,
+          "f1": 0.3784,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 21,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0088,
+        "recall": 0.2101,
+        "f1": 0.0168,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3284,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 1.25,
+      "k": 0.8,
+      "macro_f1": 0.1199,
+      "overall_f1": 0.0168,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.0241,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 401,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.7778,
+          "f1": 0.3784,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 21,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0088,
+        "recall": 0.2101,
+        "f1": 0.0168,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3284,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.25,
+      "sigma_floor_mult": 1.25,
+      "k": 0.95,
+      "macro_f1": 0.1199,
+      "overall_f1": 0.0168,
+      "per_family": {
+        "pace_slow": {
+          "precision": 0.0465,
+          "recall": 0.2222,
+          "f1": 0.0769,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 41,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.0444,
+          "recall": 0.2222,
+          "f1": 0.0741,
+          "mean_iou": 0.6361,
+          "tp": 2,
+          "fp": 43,
+          "fn": 7
+        },
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0123,
+          "recall": 0.5556,
+          "f1": 0.0241,
+          "mean_iou": 0.755,
+          "tp": 5,
+          "fp": 401,
+          "fn": 4
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.7778,
+          "f1": 0.3784,
+          "mean_iou": 0.579,
+          "tp": 7,
+          "fp": 21,
+          "fn": 2
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0088,
+        "recall": 0.2101,
+        "f1": 0.0168,
+        "mean_iou": 0.7287,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 29,
+        "total_fp": 3284,
+        "total_fn": 109
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 0.75,
+      "k": 0.5,
+      "macro_f1": 0.1278,
+      "overall_f1": 0.0165,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0099,
+          "recall": 0.4444,
+          "f1": 0.0193,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 402,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2162,
+          "recall": 0.8889,
+          "f1": 0.3478,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 29,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 16,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0165,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3233,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 0.75,
+      "k": 0.65,
+      "macro_f1": 0.1278,
+      "overall_f1": 0.0165,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0099,
+          "recall": 0.4444,
+          "f1": 0.0193,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 402,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2162,
+          "recall": 0.8889,
+          "f1": 0.3478,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 29,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 16,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0165,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3233,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 0.75,
+      "k": 0.8,
+      "macro_f1": 0.1278,
+      "overall_f1": 0.0165,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0099,
+          "recall": 0.4444,
+          "f1": 0.0193,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 402,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2162,
+          "recall": 0.8889,
+          "f1": 0.3478,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 29,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 16,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0165,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3233,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 0.75,
+      "k": 0.95,
+      "macro_f1": 0.1278,
+      "overall_f1": 0.0165,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0099,
+          "recall": 0.4444,
+          "f1": 0.0193,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 402,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2162,
+          "recall": 0.8889,
+          "f1": 0.3478,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 29,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 16,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0165,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3233,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 1.0,
+      "k": 0.5,
+      "macro_f1": 0.133,
+      "overall_f1": 0.0165,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0098,
+          "recall": 0.4444,
+          "f1": 0.0192,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 404,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2759,
+          "recall": 0.8889,
+          "f1": 0.4211,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 21,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 14,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0165,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3224,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 1.0,
+      "k": 0.65,
+      "macro_f1": 0.133,
+      "overall_f1": 0.0165,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0098,
+          "recall": 0.4444,
+          "f1": 0.0192,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 404,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2759,
+          "recall": 0.8889,
+          "f1": 0.4211,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 21,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 14,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0165,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3224,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 1.0,
+      "k": 0.8,
+      "macro_f1": 0.133,
+      "overall_f1": 0.0165,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0098,
+          "recall": 0.4444,
+          "f1": 0.0192,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 404,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2759,
+          "recall": 0.8889,
+          "f1": 0.4211,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 21,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 14,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0165,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3224,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 1.0,
+      "k": 0.95,
+      "macro_f1": 0.133,
+      "overall_f1": 0.0165,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0098,
+          "recall": 0.4444,
+          "f1": 0.0192,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 404,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2759,
+          "recall": 0.8889,
+          "f1": 0.4211,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 21,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 14,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0165,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3224,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 1.25,
+      "k": 0.5,
+      "macro_f1": 0.1347,
+      "overall_f1": 0.0166,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0099,
+          "recall": 0.4444,
+          "f1": 0.0194,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 399,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2963,
+          "recall": 0.8889,
+          "f1": 0.4444,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 19,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0166,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3215,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 1.25,
+      "k": 0.65,
+      "macro_f1": 0.1347,
+      "overall_f1": 0.0166,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0099,
+          "recall": 0.4444,
+          "f1": 0.0194,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 399,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2963,
+          "recall": 0.8889,
+          "f1": 0.4444,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 19,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0166,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3215,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 1.25,
+      "k": 0.8,
+      "macro_f1": 0.1347,
+      "overall_f1": 0.0166,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0099,
+          "recall": 0.4444,
+          "f1": 0.0194,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 399,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2963,
+          "recall": 0.8889,
+          "f1": 0.4444,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 19,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0166,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3215,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.5,
+      "sigma_floor_mult": 1.25,
+      "k": 0.95,
+      "macro_f1": 0.1347,
+      "overall_f1": 0.0166,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "pace_fast": {
+          "precision": 0.1,
+          "recall": 0.1111,
+          "f1": 0.1053,
+          "mean_iou": 0.8025,
+          "tp": 1,
+          "fp": 9,
+          "fn": 8
+        },
+        "volume_low": {
+          "precision": 0.0099,
+          "recall": 0.4444,
+          "f1": 0.0194,
+          "mean_iou": 0.8616,
+          "tp": 4,
+          "fp": 399,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.1667,
+          "recall": 0.2222,
+          "f1": 0.1905,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 10,
+          "fn": 7
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 8,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2963,
+          "recall": 0.8889,
+          "f1": 0.4444,
+          "mean_iou": 0.5526,
+          "tp": 8,
+          "fp": 19,
+          "fn": 1
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0086,
+        "recall": 0.2029,
+        "f1": 0.0166,
+        "mean_iou": 0.7394,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 646.15,
+        "total_tp": 28,
+        "total_fp": 3215,
+        "total_fn": 110
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 0.75,
+      "k": 0.5,
+      "macro_f1": 0.1315,
+      "overall_f1": 0.016,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0126,
+          "recall": 0.5556,
+          "f1": 0.0246,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 393,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2069,
+          "recall": 0.6667,
+          "f1": 0.3158,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 23,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0083,
+        "recall": 0.1957,
+        "f1": 0.016,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3207,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 0.75,
+      "k": 0.65,
+      "macro_f1": 0.1315,
+      "overall_f1": 0.016,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0126,
+          "recall": 0.5556,
+          "f1": 0.0246,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 393,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2069,
+          "recall": 0.6667,
+          "f1": 0.3158,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 23,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0083,
+        "recall": 0.1957,
+        "f1": 0.016,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3207,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 0.75,
+      "k": 0.8,
+      "macro_f1": 0.1315,
+      "overall_f1": 0.016,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0126,
+          "recall": 0.5556,
+          "f1": 0.0246,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 393,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2069,
+          "recall": 0.6667,
+          "f1": 0.3158,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 23,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0083,
+        "recall": 0.1957,
+        "f1": 0.016,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3207,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 0.75,
+      "k": 0.95,
+      "macro_f1": 0.1315,
+      "overall_f1": 0.016,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0126,
+          "recall": 0.5556,
+          "f1": 0.0246,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 393,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2069,
+          "recall": 0.6667,
+          "f1": 0.3158,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 23,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 15,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0083,
+        "recall": 0.1957,
+        "f1": 0.016,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3207,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 1.0,
+      "k": 0.5,
+      "macro_f1": 0.1358,
+      "overall_f1": 0.0161,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0127,
+          "recall": 0.5556,
+          "f1": 0.0248,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 390,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2609,
+          "recall": 0.6667,
+          "f1": 0.375,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 17,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0084,
+        "recall": 0.1957,
+        "f1": 0.0161,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3195,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 1.0,
+      "k": 0.65,
+      "macro_f1": 0.1358,
+      "overall_f1": 0.0161,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0127,
+          "recall": 0.5556,
+          "f1": 0.0248,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 390,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2609,
+          "recall": 0.6667,
+          "f1": 0.375,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 17,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0084,
+        "recall": 0.1957,
+        "f1": 0.0161,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3195,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 1.0,
+      "k": 0.8,
+      "macro_f1": 0.1358,
+      "overall_f1": 0.0161,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0127,
+          "recall": 0.5556,
+          "f1": 0.0248,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 390,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2609,
+          "recall": 0.6667,
+          "f1": 0.375,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 17,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0084,
+        "recall": 0.1957,
+        "f1": 0.0161,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3195,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 1.0,
+      "k": 0.95,
+      "macro_f1": 0.1358,
+      "overall_f1": 0.0161,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0127,
+          "recall": 0.5556,
+          "f1": 0.0248,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 390,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2609,
+          "recall": 0.6667,
+          "f1": 0.375,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 17,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 12,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0084,
+        "recall": 0.1957,
+        "f1": 0.0161,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3195,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 1.25,
+      "k": 0.5,
+      "macro_f1": 0.1366,
+      "overall_f1": 0.0161,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0128,
+          "recall": 0.5556,
+          "f1": 0.0251,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 385,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2727,
+          "recall": 0.6667,
+          "f1": 0.3871,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 16,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 10,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0084,
+        "recall": 0.1957,
+        "f1": 0.0161,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3187,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 1.25,
+      "k": 0.65,
+      "macro_f1": 0.1366,
+      "overall_f1": 0.0161,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0128,
+          "recall": 0.5556,
+          "f1": 0.0251,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 385,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2727,
+          "recall": 0.6667,
+          "f1": 0.3871,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 16,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 10,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0084,
+        "recall": 0.1957,
+        "f1": 0.0161,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3187,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 1.25,
+      "k": 0.8,
+      "macro_f1": 0.1366,
+      "overall_f1": 0.0161,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0128,
+          "recall": 0.5556,
+          "f1": 0.0251,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 385,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2727,
+          "recall": 0.6667,
+          "f1": 0.3871,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 16,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 10,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0084,
+        "recall": 0.1957,
+        "f1": 0.0161,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3187,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 1.75,
+      "sigma_floor_mult": 1.25,
+      "k": 0.95,
+      "macro_f1": 0.1366,
+      "overall_f1": 0.0161,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0128,
+          "recall": 0.5556,
+          "f1": 0.0251,
+          "mean_iou": 0.7135,
+          "tp": 5,
+          "fp": 385,
+          "fn": 4
+        },
+        "pace_slow": {
+          "precision": 0.2857,
+          "recall": 0.2222,
+          "f1": 0.25,
+          "mean_iou": 0.6421,
+          "tp": 2,
+          "fp": 5,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1429,
+          "recall": 0.1111,
+          "f1": 0.125,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 6,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 7,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2727,
+          "recall": 0.6667,
+          "f1": 0.3871,
+          "mean_iou": 0.5282,
+          "tp": 6,
+          "fp": 16,
+          "fn": 3
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 10,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0084,
+        "recall": 0.1957,
+        "f1": 0.0161,
+        "mean_iou": 0.7248,
+        "median_start_error_ms": 10.0,
+        "median_end_error_ms": 589.2,
+        "total_tp": 27,
+        "total_fp": 3187,
+        "total_fn": 111
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 0.75,
+      "k": 0.5,
+      "macro_f1": 0.1335,
+      "overall_f1": 0.015,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0108,
+          "recall": 0.4444,
+          "f1": 0.0212,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 365,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2273,
+          "recall": 0.5556,
+          "f1": 0.3226,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 17,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 14,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0078,
+        "recall": 0.1812,
+        "f1": 0.015,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3168,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 0.75,
+      "k": 0.65,
+      "macro_f1": 0.1335,
+      "overall_f1": 0.015,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0108,
+          "recall": 0.4444,
+          "f1": 0.0212,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 365,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2273,
+          "recall": 0.5556,
+          "f1": 0.3226,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 17,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 14,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0078,
+        "recall": 0.1812,
+        "f1": 0.015,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3168,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 0.75,
+      "k": 0.8,
+      "macro_f1": 0.1335,
+      "overall_f1": 0.015,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0108,
+          "recall": 0.4444,
+          "f1": 0.0212,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 365,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2273,
+          "recall": 0.5556,
+          "f1": 0.3226,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 17,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 14,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0078,
+        "recall": 0.1812,
+        "f1": 0.015,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3168,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 0.75,
+      "k": 0.95,
+      "macro_f1": 0.1335,
+      "overall_f1": 0.015,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0108,
+          "recall": 0.4444,
+          "f1": 0.0212,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 365,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.2273,
+          "recall": 0.5556,
+          "f1": 0.3226,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 17,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 14,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0078,
+        "recall": 0.1812,
+        "f1": 0.015,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3168,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 1.0,
+      "k": 0.5,
+      "macro_f1": 0.1351,
+      "overall_f1": 0.0151,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.011,
+          "recall": 0.4444,
+          "f1": 0.0216,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 358,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.5556,
+          "f1": 0.3448,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 15,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 11,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0079,
+        "recall": 0.1812,
+        "f1": 0.0151,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3156,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 1.0,
+      "k": 0.65,
+      "macro_f1": 0.1351,
+      "overall_f1": 0.0151,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.011,
+          "recall": 0.4444,
+          "f1": 0.0216,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 358,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.5556,
+          "f1": 0.3448,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 15,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 11,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0079,
+        "recall": 0.1812,
+        "f1": 0.0151,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3156,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 1.0,
+      "k": 0.8,
+      "macro_f1": 0.1351,
+      "overall_f1": 0.0151,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.011,
+          "recall": 0.4444,
+          "f1": 0.0216,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 358,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.5556,
+          "f1": 0.3448,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 15,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 11,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0079,
+        "recall": 0.1812,
+        "f1": 0.0151,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3156,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 1.0,
+      "k": 0.95,
+      "macro_f1": 0.1351,
+      "overall_f1": 0.0151,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.011,
+          "recall": 0.4444,
+          "f1": 0.0216,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 358,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 5,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.5556,
+          "f1": 0.3448,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 15,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 11,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0079,
+        "recall": 0.1812,
+        "f1": 0.0151,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3156,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 1.25,
+      "k": 0.5,
+      "macro_f1": 0.1352,
+      "overall_f1": 0.0151,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0112,
+          "recall": 0.4444,
+          "f1": 0.0218,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 354,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.5556,
+          "f1": 0.3448,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 15,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0079,
+        "recall": 0.1812,
+        "f1": 0.0151,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3149,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 1.25,
+      "k": 0.65,
+      "macro_f1": 0.1352,
+      "overall_f1": 0.0151,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0112,
+          "recall": 0.4444,
+          "f1": 0.0218,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 354,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.5556,
+          "f1": 0.3448,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 15,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0079,
+        "recall": 0.1812,
+        "f1": 0.0151,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3149,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 1.25,
+      "k": 0.8,
+      "macro_f1": 0.1352,
+      "overall_f1": 0.0151,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0112,
+          "recall": 0.4444,
+          "f1": 0.0218,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 354,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.5556,
+          "f1": 0.3448,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 15,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0079,
+        "recall": 0.1812,
+        "f1": 0.0151,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3149,
+        "total_fn": 113
+      }
+    },
+    {
+      "z_tol": 2.0,
+      "sigma_floor_mult": 1.25,
+      "k": 0.95,
+      "macro_f1": 0.1352,
+      "overall_f1": 0.0151,
+      "per_family": {
+        "word_swallowed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 2747,
+          "fn": 0
+        },
+        "volume_low": {
+          "precision": 0.0112,
+          "recall": 0.4444,
+          "f1": 0.0218,
+          "mean_iou": 0.7859,
+          "tp": 4,
+          "fp": 354,
+          "fn": 5
+        },
+        "pace_slow": {
+          "precision": 0.3333,
+          "recall": 0.2222,
+          "f1": 0.2667,
+          "mean_iou": 0.6141,
+          "tp": 2,
+          "fp": 4,
+          "fn": 7
+        },
+        "pace_fast": {
+          "precision": 0.1667,
+          "recall": 0.1111,
+          "f1": 0.1333,
+          "mean_iou": 0.7991,
+          "tp": 1,
+          "fp": 5,
+          "fn": 8
+        },
+        "terminal_contour": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 20
+        },
+        "pause_missing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6
+        },
+        "monotone": {
+          "precision": 0.25,
+          "recall": 0.5556,
+          "f1": 0.3448,
+          "mean_iou": 0.5641,
+          "tp": 5,
+          "fp": 15,
+          "fn": 4
+        },
+        "stress_missed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "pause_excess": {
+          "precision": 0.8,
+          "recall": 0.2,
+          "f1": 0.32,
+          "mean_iou": 1.0,
+          "tp": 4,
+          "fp": 1,
+          "fn": 16
+        },
+        "hesitation_filled": {
+          "precision": 0.8333,
+          "recall": 0.25,
+          "f1": 0.3846,
+          "mean_iou": 1.0,
+          "tp": 5,
+          "fp": 1,
+          "fn": 15
+        },
+        "clipping": {
+          "precision": 0.4,
+          "recall": 0.4444,
+          "f1": 0.4211,
+          "mean_iou": 0.4372,
+          "tp": 4,
+          "fp": 6,
+          "fn": 5
+        },
+        "trailing_off": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 9
+        },
+        "muffled": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 9,
+          "fn": 9
+        },
+        "pace_global": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "mean_iou": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0
+        }
+      },
+      "overall": {
+        "precision": 0.0079,
+        "recall": 0.1812,
+        "f1": 0.0151,
+        "mean_iou": 0.7496,
+        "median_start_error_ms": 0.0,
+        "median_end_error_ms": 131.5,
+        "total_tp": 25,
+        "total_fp": 3149,
+        "total_fn": 113
+      }
+    }
+  ]
+}
