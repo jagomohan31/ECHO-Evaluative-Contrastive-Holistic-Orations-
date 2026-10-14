@@ -1,6 +1,6 @@
 # Data (raw and built dataset flac)
 data/raw/
-data/dataset/**/*.flac
+
 
 # Build outputs
 dist/
