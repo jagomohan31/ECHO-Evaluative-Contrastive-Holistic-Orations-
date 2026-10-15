@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SpeechLens — Contrastive Speech Analytics",
+  title: "ECHO — Contrastive Speech Analytics",
   description: "Evaluate, compare, and polish oratory performance against reference baselines.",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
               </div>
               <div>
                 <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-                  SpeechLens
+                  ECHO
                 </span>
                 <span className="text-[10px] font-mono uppercase tracking-widest text-blue-400 ml-2 px-1.5 py-0.5 rounded bg-blue-950/60 border border-blue-800/40">
                   ECHO 2026
